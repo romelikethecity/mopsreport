@@ -1,0 +1,122 @@
+/* ============================================================
+   MOps Report — Design Tokens
+   Generated: 2026-04-03
+   ============================================================ */
+
+:root {
+  /* ---- Backgrounds ---- */
+  --mops-bg-primary: #F8FAFC;
+  --mops-bg-surface: #FFFFFF;
+  --mops-bg-tinted: #ECFEFF;
+  --mops-bg-dark: #0F172A;
+  --mops-bg-dark-surface: #1E293B;
+
+  /* ---- Accent: Cyan ---- */
+  --mops-accent: #0891B2;
+  --mops-accent-hover: #06B6D4;
+  --mops-accent-active: #0E7490;
+  --mops-accent-subtle: #ECFEFF;
+  --mops-accent-rgb: 8, 145, 178;           /* for rgba() usage */
+
+  /* ---- Text ---- */
+  --mops-text-primary: #0F172A;
+  --mops-text-secondary: #64748B;
+  --mops-text-tertiary: #94A3B8;
+  --mops-text-inverse: #F1F5F9;
+  --mops-text-on-accent: #FFFFFF;
+
+  /* ---- Borders & Dividers ---- */
+  --mops-border: #E2E8F0;
+  --mops-border-subtle: #F1F5F9;
+  --mops-border-strong: #CBD5E1;
+
+  /* ---- Typography ---- */
+  --mops-font-heading: 'General Sans', system-ui, -apple-system, sans-serif;
+  --mops-font-body: 'Satoshi', system-ui, -apple-system, sans-serif;
+  --mops-font-mono: 'IBM Plex Mono', 'Menlo', 'Monaco', monospace;
+
+  /* ---- Font Sizes (fluid) ---- */
+  --mops-text-xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);    /* 11-12px */
+  --mops-text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.875rem);   /* 13-14px */
+  --mops-text-base: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);      /* 15-16px */
+  --mops-text-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);      /* 18-20px */
+  --mops-text-xl: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);       /* 22-28px */
+  --mops-text-2xl: clamp(1.75rem, 1.5rem + 1vw, 2.5rem);          /* 28-40px */
+  --mops-text-3xl: clamp(2.25rem, 1.8rem + 1.5vw, 3.5rem);        /* 36-56px */
+
+  /* ---- Font Weights ---- */
+  --mops-weight-normal: 400;
+  --mops-weight-medium: 500;
+  --mops-weight-semibold: 600;
+  --mops-weight-bold: 700;
+  --mops-weight-extrabold: 800;
+
+  /* ---- Spacing Scale ---- */
+  --mops-space-1: 0.25rem;   /* 4px */
+  --mops-space-2: 0.5rem;    /* 8px */
+  --mops-space-3: 0.75rem;   /* 12px */
+  --mops-space-4: 1rem;      /* 16px */
+  --mops-space-6: 1.5rem;    /* 24px */
+  --mops-space-8: 2rem;      /* 32px */
+  --mops-space-12: 3rem;     /* 48px */
+  --mops-space-16: 4rem;     /* 64px */
+  --mops-space-24: 6rem;     /* 96px */
+
+  /* ---- Radius ---- */
+  --mops-radius-sm: 4px;
+  --mops-radius-md: 8px;
+  --mops-radius-lg: 12px;
+  --mops-radius-xl: 16px;
+  --mops-radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --mops-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --mops-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --mops-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --mops-shadow-accent: 0 4px 16px rgba(var(--mops-accent-rgb), 0.25);
+
+  /* ---- Transitions ---- */
+  --mops-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --mops-duration-fast: 150ms;
+  --mops-duration-normal: 250ms;
+  --mops-duration-slow: 400ms;
+
+  /* ---- Z-Index ---- */
+  --mops-z-dropdown: 100;
+  --mops-z-sticky: 200;
+  --mops-z-modal: 300;
+  --mops-z-toast: 400;
+}
+
+/* ---- Dark Mode Override ---- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mops-bg-primary: #0F172A;
+    --mops-bg-surface: #1E293B;
+    --mops-bg-tinted: #164E63;
+    --mops-text-primary: #F1F5F9;
+    --mops-text-secondary: #94A3B8;
+    --mops-text-tertiary: #64748B;
+    --mops-text-inverse: #0F172A;
+    --mops-border: #334155;
+    --mops-border-subtle: #1E293B;
+    --mops-border-strong: #475569;
+    --mops-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --mops-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --mops-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* ---- Utility: force dark on specific containers ---- */
+[data-theme="dark"] {
+  --mops-bg-primary: #0F172A;
+  --mops-bg-surface: #1E293B;
+  --mops-bg-tinted: #164E63;
+  --mops-text-primary: #F1F5F9;
+  --mops-text-secondary: #94A3B8;
+  --mops-text-tertiary: #64748B;
+  --mops-text-inverse: #0F172A;
+  --mops-border: #334155;
+  --mops-border-subtle: #1E293B;
+  --mops-border-strong: #475569;
+}

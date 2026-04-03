@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 32" width="220" height="32">
+  <defs>
+    <style>
+      @import url('https://api.fontshare.com/v2/css?f[]=general-sans@700&amp;display=swap');
+    </style>
+  </defs>
+  <text x="0" y="25" font-family="General Sans, sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5" fill="#F1F5F9">MOps</text>
+  <text x="70" y="25" font-family="General Sans, sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5" fill="#0891B2">Report</text>
+</svg>
