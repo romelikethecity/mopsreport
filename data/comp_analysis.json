@@ -1,1 +1,193 @@
-{}
+{
+  "generated_at": "2026-04-04T16:06:37.748133",
+  "total_records": 295,
+  "records_with_salary": 203,
+  "disclosure_rate": 68.8,
+  "salary_stats": {
+    "min": 31200,
+    "max": 1000000,
+    "median": 100000,
+    "avg": 112961,
+    "count_with_salary": 203
+  },
+  "by_seniority": {
+    "Senior": {
+      "count": 36,
+      "min_base_avg": 117415,
+      "max_base_avg": 152679,
+      "median": 110000
+    },
+    "Entry": {
+      "count": 53,
+      "min_base_avg": 76825,
+      "max_base_avg": 118176,
+      "median": 70000
+    },
+    "Unknown": {
+      "count": 28,
+      "min_base_avg": 124932,
+      "max_base_avg": 170524,
+      "median": 125000
+    },
+    "VP": {
+      "count": 9,
+      "min_base_avg": 178038,
+      "max_base_avg": 266255,
+      "median": 165000
+    },
+    "Director": {
+      "count": 26,
+      "min_base_avg": 138344,
+      "max_base_avg": 198843,
+      "median": 140000
+    },
+    "Mid": {
+      "count": 49,
+      "min_base_avg": 111986,
+      "max_base_avg": 174071,
+      "median": 100000
+    }
+  },
+  "by_metro": {
+    "Unknown": {
+      "count": 106,
+      "min_base_avg": 108214,
+      "max_base_avg": 156362,
+      "median": 100000
+    },
+    "New York": {
+      "count": 46,
+      "min_base_avg": 120452,
+      "max_base_avg": 172560,
+      "median": 125000
+    },
+    "Chicago": {
+      "count": 6,
+      "min_base_avg": 94666,
+      "max_base_avg": 136666,
+      "median": 100000
+    },
+    "Boston": {
+      "count": 6,
+      "min_base_avg": 130000,
+      "max_base_avg": 165611,
+      "median": 125000
+    },
+    "Washington DC": {
+      "count": 3,
+      "min_base_avg": 101300,
+      "max_base_avg": 151266,
+      "median": 125000
+    },
+    "Los Angeles": {
+      "count": 18,
+      "min_base_avg": 119905,
+      "max_base_avg": 171859,
+      "median": 106800
+    },
+    "Seattle": {
+      "count": 7,
+      "min_base_avg": 120014,
+      "max_base_avg": 184728,
+      "median": 119000
+    },
+    "San Francisco": {
+      "count": 4,
+      "min_base_avg": 137025,
+      "max_base_avg": 227950,
+      "median": 100000
+    },
+    "Austin": {
+      "count": 4,
+      "min_base_avg": 112800,
+      "max_base_avg": 179825,
+      "median": 127200
+    }
+  },
+  "by_remote": {
+    "remote": {
+      "count": 30,
+      "min_base_avg": 92258,
+      "max_base_avg": 116706,
+      "median": 92000
+    },
+    "onsite": {
+      "count": 173,
+      "min_base_avg": 116551,
+      "max_base_avg": 171943,
+      "median": 105000
+    }
+  },
+  "top_paying_roles": [
+    {
+      "title": "Marketing Operations Specialist",
+      "company": "",
+      "salary_min": 75000.0,
+      "salary_max": 1000000.0,
+      "seniority": "Entry"
+    },
+    {
+      "title": "Vice President, Marketing Technology & Operations",
+      "company": "Visa",
+      "salary_min": 258100.0,
+      "salary_max": 451800.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Sr. Director, Product Growth & Marketing Analytics",
+      "company": "Dave",
+      "salary_min": 266000.0,
+      "salary_max": 444000.0,
+      "seniority": ""
+    },
+    {
+      "title": "Head of Marketing Technology and Operations",
+      "company": "The Walt Disney Company",
+      "salary_min": 285700.0,
+      "salary_max": 383100.0,
+      "seniority": "Head of"
+    },
+    {
+      "title": "Senior Director – Marketing Technology",
+      "company": "JCPenney",
+      "salary_min": 170000.0,
+      "salary_max": 360000.0,
+      "seniority": "Director"
+    },
+    {
+      "title": "Vice President, Technical Program Management, Commercial, MarTech, and Data",
+      "company": "SiriusXM",
+      "salary_min": 228000.0,
+      "salary_max": 335000.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Vice President, Technical Program Management, Commercial, MarTech, and Data",
+      "company": "adswizz",
+      "salary_min": 228000.0,
+      "salary_max": 335000.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Marketing Analytics & Insights Data Architect - Concur",
+      "company": "SAP",
+      "salary_min": 175800.0,
+      "salary_max": 328800.0,
+      "seniority": ""
+    },
+    {
+      "title": "Director, Bank Marketing Analytics",
+      "company": "USAA",
+      "salary_min": 164780.0,
+      "salary_max": 314960.0,
+      "seniority": "Director"
+    },
+    {
+      "title": "Director, US Omnichannel Marketing Analytics",
+      "company": "Daiichi Sankyo",
+      "salary_min": 198160.0,
+      "salary_max": 297240.0,
+      "seniority": "Director"
+    }
+  ]
+}

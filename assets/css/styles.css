@@ -861,4 +861,181 @@ body.page-home .main-content {
     .related-links-grid {
         grid-template-columns: 1fr;
     }
+
+    .calc-form {
+        grid-template-columns: 1fr;
+    }
+
+    .range-bar-values {
+        font-size: var(--mops-text-xs);
+    }
+}
+
+/* ---- Range Bars (Salary) ---- */
+.range-bar-wrap {
+    margin-bottom: var(--mops-space-5);
+}
+
+.range-bar-label {
+    font-weight: var(--mops-weight-semibold);
+    margin-bottom: var(--mops-space-2);
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-primary);
+}
+
+.range-bar-track {
+    position: relative;
+    height: 28px;
+    background: var(--mops-bg-tertiary);
+    border-radius: var(--mops-radius-md);
+    overflow: visible;
+}
+
+.range-bar-fill {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--mops-accent), var(--mops-accent-hover));
+    border-radius: var(--mops-radius-md);
+    min-width: 20px;
+}
+
+.range-bar-median {
+    position: absolute;
+    top: -4px;
+    width: 3px;
+    height: 36px;
+    background: var(--mops-text-primary);
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+.range-bar-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--mops-space-1);
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-secondary);
+}
+
+.range-bar-mid {
+    font-weight: var(--mops-weight-semibold);
+    color: var(--mops-text-primary);
+}
+
+/* ---- Data Tables ---- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--mops-space-4) 0 var(--mops-space-6);
+    font-size: var(--mops-text-sm);
+}
+
+.data-table thead {
+    background: var(--mops-bg-tertiary);
+}
+
+.data-table th,
+.data-table td {
+    padding: var(--mops-space-3) var(--mops-space-4);
+    text-align: left;
+    border-bottom: 1px solid var(--mops-border-subtle);
+}
+
+.data-table th {
+    font-weight: var(--mops-weight-semibold);
+    color: var(--mops-text-primary);
+    font-size: var(--mops-text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    color: var(--mops-text-secondary);
+}
+
+.data-table td a {
+    font-weight: var(--mops-weight-medium);
+}
+
+.data-table tbody tr:hover {
+    background: var(--mops-bg-secondary);
+}
+
+/* ---- Source Citation ---- */
+.source-citation {
+    font-size: var(--mops-text-xs);
+    color: var(--mops-text-tertiary);
+    margin-top: var(--mops-space-6);
+    padding-top: var(--mops-space-4);
+    border-top: 1px solid var(--mops-border-subtle);
+}
+
+/* ---- Calculator ---- */
+.calculator-gate {
+    background: var(--mops-bg-surface);
+    border: 1px solid var(--mops-border-subtle);
+    border-radius: var(--mops-radius-lg);
+    padding: var(--mops-space-8);
+    text-align: center;
+    margin: var(--mops-space-6) 0;
+}
+
+.calculator-gate h2 {
+    margin-bottom: var(--mops-space-3);
+}
+
+.calculator-tool {
+    margin: var(--mops-space-6) 0;
+}
+
+.calc-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--mops-space-4);
+    align-items: end;
+    margin-bottom: var(--mops-space-6);
+}
+
+.calc-field label {
+    display: block;
+    font-size: var(--mops-text-sm);
+    font-weight: var(--mops-weight-semibold);
+    color: var(--mops-text-primary);
+    margin-bottom: var(--mops-space-2);
+}
+
+.calc-field select {
+    width: 100%;
+    padding: var(--mops-space-3);
+    border: 1px solid var(--mops-border-subtle);
+    border-radius: var(--mops-radius-md);
+    background: var(--mops-bg-primary);
+    color: var(--mops-text-primary);
+    font-family: var(--mops-font-body);
+    font-size: var(--mops-text-sm);
+}
+
+.calc-result {
+    background: var(--mops-bg-surface);
+    border: 1px solid var(--mops-border-subtle);
+    border-radius: var(--mops-radius-lg);
+    padding: var(--mops-space-6);
+    text-align: center;
+    margin: var(--mops-space-6) 0;
+}
+
+.calc-note {
+    font-size: var(--mops-text-xs);
+    color: var(--mops-text-tertiary);
+    margin-top: var(--mops-space-4);
+}
+
+/* ---- Lead text ---- */
+.lead {
+    font-size: var(--mops-text-lg);
+    color: var(--mops-text-secondary);
+    line-height: 1.6;
+    max-width: 720px;
 }

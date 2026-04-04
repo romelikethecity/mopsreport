@@ -1,1 +1,102 @@
-{}
+{
+  "date": "April 04, 2026",
+  "total_jobs": 295,
+  "tools": {
+    "Rag": 153,
+    "Salesforce": 103,
+    "Rust": 78,
+    "Aws": 77,
+    "Hubspot": 67,
+    "Salesforce Marketing Cloud": 42,
+    "Tableau": 37,
+    "Marketo": 35,
+    "Power Bi": 29,
+    "Python": 25,
+    "Hubspot Marketing": 24,
+    "Looker": 17,
+    "Azure": 12,
+    "Braze": 12,
+    "Zapier": 9,
+    "Zoominfo": 8,
+    "Catalyst": 7,
+    "Gcp": 7,
+    "Clay": 7,
+    "Eloqua": 6,
+    "Demandbase": 5,
+    "6Sense": 5,
+    "Kubernetes": 5,
+    "Docker": 5,
+    "Leandata": 4,
+    "Workato": 4,
+    "Workato Ipaas": 4,
+    "Dynamics 365": 4,
+    "Javascript": 4,
+    "N8N": 4,
+    "Openai": 4,
+    "Langchain": 4,
+    "G2": 4,
+    "Salesloft": 3,
+    "Linkedin Marketing": 3,
+    "Claude": 3,
+    "Drip": 3,
+    "Chili Piper": 3,
+    "Chili Piper Routing": 3,
+    "Klaviyo": 3,
+    "Captivateiq": 3,
+    "Postal": 2,
+    "Ringlead": 2,
+    "Ringlead Revops": 2,
+    "Seismic": 2,
+    "Make": 2,
+    "Optimizely": 2,
+    "Apollo": 2,
+    "Seamless Ai": 2,
+    "Iterable": 2
+  },
+  "geo_focus": {
+    "Global": 118,
+    "North America": 84,
+    "Apac": 23,
+    "Emea": 15,
+    "Latam": 7
+  },
+  "team_structure": {
+    "Build Team": 134,
+    "Reports Cro": 49,
+    "First Hire": 9,
+    "Reports Vp": 7,
+    "Player Coach": 1,
+    "Reports Ceo": 1
+  },
+  "hiring_signals": {
+    "Growth Hire": 189,
+    "Turnaround": 100,
+    "Immediate": 13
+  },
+  "segment": {
+    "Enterprise": 83,
+    "Smb": 13,
+    "Fortune 500": 9,
+    "Mid Market": 2
+  },
+  "motion": {
+    "Channel": 76,
+    "Abm": 18,
+    "Direct": 3,
+    "Inside": 1,
+    "Plg": 1
+  },
+  "comp_signals": {
+    "Equity": 196,
+    "Ote Mentioned": 4
+  },
+  "deal_size": {
+    "Seven Figure": 10,
+    "Transactional": 9,
+    "Enterprise Deal": 2
+  },
+  "sales_cycle": {
+    "Short": 7,
+    "Long": 2
+  }
+}

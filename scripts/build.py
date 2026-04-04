@@ -17,6 +17,8 @@ from templates import (get_page_wrapper, write_page, get_homepage_schema,
                        get_breadcrumb_schema, get_faq_schema,
                        get_article_schema,
                        breadcrumb_html, newsletter_cta_html, faq_html, ALL_PAGES)
+from salary_pages import build_all_salary_pages
+from tools_pages import build_all_tools_pages
 
 # OG image generation state
 SKIP_OG = "--skip-og" in sys.argv
@@ -399,6 +401,12 @@ def main():
     build_privacy_page()
     build_terms_page()
     build_404_page()
+
+    print("\n  Building salary pages...")
+    build_all_salary_pages(PROJECT_DIR)
+
+    print("\n  Building tools pages...")
+    build_all_tools_pages(PROJECT_DIR)
 
     print("\n  Building meta files...")
     build_sitemap()
