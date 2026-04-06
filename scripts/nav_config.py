@@ -52,6 +52,7 @@ NAV_ITEMS = [
             {"href": "/careers/", "label": "Career Guides"},
             {"href": "/careers/how-to-break-into-mops/", "label": "How to Break Into MOps"},
             {"href": "/careers/job-growth/", "label": "Job Market Growth"},
+            {"href": "/companies/", "label": "Companies Hiring"},
         ],
     },
     {"href": "/glossary/", "label": "Glossary"},

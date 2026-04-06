@@ -1,0 +1,110 @@
+[
+  {
+    "name": "MOps-Apalooza",
+    "organizer": "MOps-Apalooza",
+    "typical_attendees": 1500,
+    "location": "Anaheim, CA",
+    "website_url": "https://mopsapalooza.com/",
+    "relevance_tags": ["marketing ops", "automation", "data management", "MarTech"],
+    "description": "The only conference built specifically for marketing operations professionals. Deep technical sessions on automation, data hygiene, attribution, and stack architecture."
+  },
+  {
+    "name": "MarTech Conference",
+    "organizer": "Third Door Media",
+    "typical_attendees": 3000,
+    "location": "Boston, MA",
+    "website_url": "https://martech.org/martech-conference/",
+    "relevance_tags": ["MarTech", "marketing ops", "technology", "data"],
+    "description": "Covers the intersection of marketing and technology. Sessions on stack consolidation, data management, vendor evaluation, and marketing ops career development."
+  },
+  {
+    "name": "Adobe Summit",
+    "organizer": "Adobe",
+    "typical_attendees": 12000,
+    "location": "Las Vegas, NV",
+    "website_url": "https://summit.adobe.com/",
+    "relevance_tags": ["Marketo", "marketing automation", "analytics", "personalization"],
+    "description": "Adobe's flagship conference with extensive Marketo and Experience Cloud content. Essential for MOps teams running enterprise marketing automation programs."
+  },
+  {
+    "name": "INBOUND",
+    "organizer": "HubSpot",
+    "typical_attendees": 12000,
+    "location": "Boston, MA",
+    "website_url": "https://www.inbound.com/",
+    "relevance_tags": ["HubSpot", "marketing automation", "CRM", "operations"],
+    "description": "HubSpot's annual conference with deep tracks on marketing automation, CRM operations, and the HubSpot ecosystem. Critical for HubSpot-centric MOps teams."
+  },
+  {
+    "name": "Salesforce Connections",
+    "organizer": "Salesforce",
+    "typical_attendees": 5000,
+    "location": "Chicago, IL",
+    "website_url": "https://www.salesforce.com/connections/",
+    "relevance_tags": ["Salesforce", "marketing cloud", "data", "CRM integration"],
+    "description": "Focused on Salesforce Marketing Cloud and data integration. Ideal for MOps professionals managing Salesforce-based marketing stacks and cross-platform data flows."
+  },
+  {
+    "name": "Marketo User Summit",
+    "organizer": "Adobe",
+    "typical_attendees": 2000,
+    "location": "Las Vegas, NV",
+    "website_url": "https://summit.adobe.com/",
+    "relevance_tags": ["Marketo", "marketing automation", "lead management", "campaign ops"],
+    "description": "Part of Adobe Summit, focused specifically on Marketo users. Covers advanced automation, lead scoring, campaign architecture, and Marketo administration best practices."
+  },
+  {
+    "name": "Gartner Marketing Symposium",
+    "organizer": "Gartner",
+    "typical_attendees": 3000,
+    "location": "Denver, CO",
+    "website_url": "https://www.gartner.com/en/conferences/na/marketing-symposium-us",
+    "relevance_tags": ["marketing strategy", "MarTech", "analytics", "budget planning"],
+    "description": "Gartner's premier marketing event. Covers MarTech stack rationalization, budget allocation, analytics maturity, and the evolving role of marketing operations."
+  },
+  {
+    "name": "MarketingProfs B2B Forum",
+    "organizer": "MarketingProfs",
+    "typical_attendees": 1500,
+    "location": "Boston, MA",
+    "website_url": "https://www.marketingprofs.com/events/b2b-forum/",
+    "relevance_tags": ["B2B marketing", "operations", "content", "analytics"],
+    "description": "Practical B2B marketing conference with sessions on marketing operations, analytics, technology adoption, and process optimization."
+  },
+  {
+    "name": "Forrester B2B Summit",
+    "organizer": "Forrester (formerly SiriusDecisions)",
+    "typical_attendees": 3000,
+    "location": "Austin, TX",
+    "website_url": "https://www.forrester.com/b2b-summit-north-america/",
+    "relevance_tags": ["revenue operations", "marketing ops", "data-driven", "strategy"],
+    "description": "Formerly SiriusDecisions Summit. Covers the full B2B revenue engine including marketing operations frameworks, demand waterfall models, and data management."
+  },
+  {
+    "name": "The MarTech Summit",
+    "organizer": "BEETc",
+    "typical_attendees": 500,
+    "location": "Various Global Cities",
+    "website_url": "https://themartechsummit.com/",
+    "relevance_tags": ["MarTech", "digital transformation", "marketing ops", "data"],
+    "description": "Global MarTech summit series with regional events. Intimate format focused on MarTech stack strategy, digital transformation, and marketing ops leadership."
+  },
+  {
+    "name": "Integrate Conference",
+    "organizer": "Integrate",
+    "typical_attendees": 600,
+    "location": "Scottsdale, AZ",
+    "website_url": "https://www.integrate.com/",
+    "relevance_tags": ["demand gen", "data quality", "marketing ops", "lead management"],
+    "description": "Focused on precision demand marketing and data quality. Covers lead management, data governance, and marketing operations process improvement."
+  },
+  {
+    "name": "HubSpot INBOUND",
+    "organizer": "HubSpot",
+    "typical_attendees": 12000,
+    "location": "Boston, MA",
+    "website_url": "https://www.inbound.com/",
+    "relevance_tags": ["HubSpot", "operations", "RevOps", "automation"],
+    "description": "HubSpot's annual flagship with dedicated operations tracks. Covers HubSpot Operations Hub, workflow automation, data sync, and RevOps practices for MOps teams."
+  }
+]

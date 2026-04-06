@@ -20,6 +20,9 @@ from templates import (get_page_wrapper, write_page, get_homepage_schema,
 from salary_pages import build_all_salary_pages
 from tools_pages import build_all_tools_pages
 from glossary_pages import build_all_glossary_pages
+from build_companies import build_all_company_pages
+from report_pages import build_all_report_pages
+from conferences_pages import build_conferences_index
 
 # OG image generation state
 SKIP_OG = "--skip-og" in sys.argv
@@ -876,6 +879,13 @@ def main():
 
     print("\n  Building glossary pages...")
     build_all_glossary_pages(PROJECT_DIR)
+
+    build_all_company_pages(PROJECT_DIR)
+
+    build_all_report_pages(PROJECT_DIR)
+
+    print("\n  Building conference pages...")
+    build_conferences_index()
 
     print("\n  Building meta files...")
     build_sitemap()
