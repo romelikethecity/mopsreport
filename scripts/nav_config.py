@@ -55,15 +55,7 @@ NAV_ITEMS = [
         ],
     },
     {"href": "/glossary/", "label": "Glossary"},
-    {
-        "href": "/insights/",
-        "label": "Resources",
-        "children": [
-            {"href": "/insights/", "label": "Insights"},
-            {"href": "/blog/", "label": "Blog"},
-            {"href": "/jobs/", "label": "Job Board"},
-        ],
-    },
+    {"href": "/insights/", "label": "Insights"},
 ]
 
 FOOTER_COLUMNS = {
@@ -84,8 +76,6 @@ FOOTER_COLUMNS = {
         {"href": "/careers/", "label": "Career Guides"},
         {"href": "/careers/how-to-break-into-mops/", "label": "How to Break Into MOps"},
         {"href": "/glossary/", "label": "Glossary"},
-        {"href": "/jobs/", "label": "Job Board"},
-        {"href": "/blog/", "label": "Blog"},
         {"href": "/insights/", "label": "Insights"},
         {"href": "/newsletter/", "label": "Newsletter"},
         {"href": "/about/", "label": "About"},

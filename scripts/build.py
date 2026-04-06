@@ -115,11 +115,11 @@ def build_homepage():
             <p>How to break in, level up, and negotiate. Interview prep, skill maps, and role comparisons for every stage of a MOps career.</p>
             <span class="preview-link">Browse guides &rarr;</span>
         </a>
-        <a href="/jobs/" class="preview-card">
-            <div class="preview-icon"><span class="preview-emoji">&#128188;</span></div>
-            <h3>Job Board</h3>
-            <p>Curated marketing operations roles from top B2B and B2C companies. Updated twice a week from thousands of tracked postings.</p>
-            <span class="preview-link">View all jobs &rarr;</span>
+        <a href="/insights/" class="preview-card">
+            <div class="preview-icon"><span class="preview-emoji">&#128161;</span></div>
+            <h3>Insights</h3>
+            <p>Data-driven analysis of the MOps job market, salary trends, tool adoption, and hiring patterns across B2B and B2C companies.</p>
+            <span class="preview-link">Browse insights &rarr;</span>
         </a>
         <a href="/glossary/" class="preview-card">
             <div class="preview-icon"><span class="preview-emoji">&#128218;</span></div>
@@ -326,6 +326,462 @@ def build_terms_page():
     print(f"  Built: terms/index.html")
 
 
+def build_careers_index():
+    """Generate the careers index page."""
+    title = "Marketing Operations Career Guides"
+    description = (
+        "Career guides for marketing operations professionals. How to break into MOps,"
+        " job market growth, salary expectations, and skills you need to advance."
+    )
+    crumbs = [("Home", "/"), ("Careers", None)]
+    bc_html = breadcrumb_html(crumbs)
+
+    body = f'''{bc_html}
+<section class="page-header">
+    <h1>Marketing Operations Career Guides</h1>
+    <p class="lead">Practical career guidance for every stage of a marketing operations career. Built on real job posting data, not guesswork.</p>
+</section>
+<div class="container">
+    <p>Marketing operations is one of the fastest-growing functions in B2B and B2C organizations. Companies that once had a single "marketing automation admin" now build full MOps teams with specialists in data, tooling, analytics, and campaign operations. The career path has expanded, and so have the questions.</p>
+    <p>These guides answer the questions we see most from people entering the field, leveling up, or evaluating their next move.</p>
+
+    <h2>Getting Started</h2>
+    <ul>
+        <li><a href="/careers/how-to-break-into-mops/">How to Break Into Marketing Operations</a> - Skills, certifications, tools, and paths into the field</li>
+        <li><a href="/careers/job-growth/">Marketing Ops Job Market Growth</a> - Demand trends, hiring patterns, and where the market is headed</li>
+    </ul>
+
+    <h2>Salary and Compensation</h2>
+    <p>Understanding your market value is the foundation of career planning. Our salary data comes from analysis of real job postings, not self-reported surveys.</p>
+    <ul>
+        <li><a href="/salary/">Salary Index</a> - Complete MOps salary benchmarks</li>
+        <li><a href="/salary/entry/">Entry-Level Salaries</a> - What to expect starting out</li>
+        <li><a href="/salary/senior/">Senior-Level Salaries</a> - Compensation at the IC peak</li>
+        <li><a href="/salary/director/">Director-Level Salaries</a> - Management track compensation</li>
+        <li><a href="/salary/calculator/">Salary Calculator</a> - Estimate your market rate</li>
+    </ul>
+
+    <h2>Skills and Tools</h2>
+    <p>The tools you know shape the roles you qualify for. Our tool reviews show which platforms employers actually require, based on job posting analysis.</p>
+    <ul>
+        <li><a href="/tools/">MOps Tool Reviews</a> - Rankings by job posting frequency</li>
+        <li><a href="/tools/category/marketing-automation/">Marketing Automation Platforms</a> - Marketo, HubSpot, Eloqua, and more</li>
+        <li><a href="/tools/category/crm/">CRM Platforms</a> - Salesforce, HubSpot CRM, Dynamics 365</li>
+        <li><a href="/tools/category/analytics/">Analytics and BI</a> - Tableau, Looker, Power BI, Domo</li>
+    </ul>
+
+    <h2>What Makes a Strong MOps Professional</h2>
+    <p>Marketing operations sits at the intersection of marketing strategy, data management, and technology. The best MOps professionals share a few traits:</p>
+    <ul>
+        <li><strong>Systems thinking.</strong> They see how tools, data, and processes connect across the full revenue cycle, not just their piece of it.</li>
+        <li><strong>Technical depth with business context.</strong> They can build a complex lead scoring model and explain why it matters to the CMO in the same conversation.</li>
+        <li><strong>Data discipline.</strong> They care about data quality because they have seen what happens when CRM records degrade: bad routing, wrong reporting, lost deals.</li>
+        <li><strong>Vendor independence.</strong> They evaluate tools based on fit, not marketing. They know that every platform has trade-offs.</li>
+    </ul>
+    <p>Whether you are just entering the field or planning your next move, these guides give you the data and context to make informed decisions.</p>
+</div>
+'''
+    body += newsletter_cta_html("Career intel for MOps professionals, delivered weekly.")
+
+    page = get_page_wrapper(
+        title=title,
+        description=description,
+        canonical_path="/careers/",
+        body_content=body,
+        active_path="/careers/",
+        extra_head=get_breadcrumb_schema(crumbs),
+        body_class="page-inner",
+    )
+    write_page("careers/index.html", page)
+    print(f"  Built: careers/index.html")
+
+
+def build_careers_break_into_mops():
+    """Generate the 'How to Break Into MOps' guide."""
+    title = "How to Break Into Marketing Operations"
+    description = (
+        "A practical guide to starting a career in marketing operations. Skills to learn,"
+        " certifications that matter, tools to know, career paths, and salary expectations."
+    )
+    crumbs = [("Home", "/"), ("Careers", "/careers/"), ("How to Break Into MOps", None)]
+    bc_html = breadcrumb_html(crumbs)
+
+    faq_pairs = [
+        ("Do I need a degree to work in marketing operations?",
+         "No specific degree is required. MOps professionals come from marketing, business, IT, analytics, and other backgrounds. Employers care more about platform certifications, hands-on experience, and the ability to work with data than about the name on your diploma."),
+        ("What is the best certification for marketing operations?",
+         "The most valuable certifications depend on the tools your target employers use. Marketo Certified Expert, HubSpot Marketing Software Certification, and Salesforce Administrator are the three most commonly requested. Start with the platform that dominates your local job market."),
+        ("How long does it take to break into MOps?",
+         "Most people can land their first MOps role within 6 to 12 months of focused preparation. That timeline assumes you earn at least one platform certification, build hands-on experience (even with free tiers), and can demonstrate data literacy in interviews."),
+        ("What salary should I expect as an entry-level MOps professional?",
+         "Entry-level MOps roles (Marketing Operations Coordinator, Marketing Automation Specialist) typically pay $55,000 to $75,000 depending on market, company size, and your existing skills. See our salary data for current benchmarks."),
+    ]
+
+    body = f'''{bc_html}
+<section class="page-header">
+    <h1>How to Break Into Marketing Operations: A Complete Guide</h1>
+    <p class="lead">Everything you need to start a career in MOps. Skills, certifications, tools, paths in, and what to expect when you get there.</p>
+</section>
+<div class="container">
+    <p>Marketing operations is not a field most people plan to enter. It is a field people discover after realizing that marketing campaigns run on systems, and someone needs to build and maintain those systems. If you are organized, curious about technology, and comfortable with data, you are already closer than you think.</p>
+    <p>This guide covers what you need to know and do to land your first MOps role.</p>
+
+    <h2>What Marketing Operations Actually Is</h2>
+    <p>Marketing operations is the function that makes marketing run. MOps teams manage the technology stack, data infrastructure, campaign execution processes, analytics, and reporting that marketing depends on. When a lead fills out a form and ends up routed to the right sales rep with the right score and the right nurture track, that is MOps at work.</p>
+    <p>The scope varies by company. At smaller organizations, one MOps person might manage the entire marketing technology stack. At enterprise companies, MOps teams have specialists for automation, analytics, data management, and tool administration.</p>
+
+    <h2>Skills You Need</h2>
+    <p>MOps roles require a combination of technical and business skills. Here is what employers look for, based on our analysis of thousands of job postings:</p>
+
+    <h3>Technical Skills</h3>
+    <ul>
+        <li><strong>Marketing automation platform proficiency.</strong> Marketo, HubSpot, Pardot, or Eloqua. Pick one and learn it deeply. Marketo and HubSpot appear in the most job postings.</li>
+        <li><strong>CRM knowledge.</strong> Salesforce is the default. Understanding objects, fields, campaigns, and how data flows between your CRM and MAP is essential.</li>
+        <li><strong>Data management.</strong> List imports, deduplication, normalization, lead scoring, and lifecycle management. This is where MOps earns its keep.</li>
+        <li><strong>HTML and CSS basics.</strong> Email templates and landing pages still require hands-on markup. You do not need to be a front-end developer, but you need to be comfortable editing code.</li>
+        <li><strong>Analytics and reporting.</strong> Building dashboards, creating attribution reports, and translating data into business recommendations. SQL is increasingly valuable.</li>
+        <li><strong>Integration concepts.</strong> APIs, webhooks, iPaaS tools (Zapier, Make, Workato). Connecting tools is half the job.</li>
+    </ul>
+
+    <h3>Business Skills</h3>
+    <ul>
+        <li><strong>Process design.</strong> Mapping out lead flows, campaign operations processes, and SLAs between marketing and sales.</li>
+        <li><strong>Stakeholder communication.</strong> Translating technical decisions into business impact for marketing leadership.</li>
+        <li><strong>Project management.</strong> MOps teams run campaigns, migrations, integrations, and ongoing maintenance simultaneously.</li>
+        <li><strong>Vendor evaluation.</strong> Knowing how to assess tools, negotiate contracts, and plan implementations.</li>
+    </ul>
+
+    <h2>Certifications That Matter</h2>
+    <p>Certifications signal platform proficiency to employers. They are not a replacement for experience, but they get your resume past the initial screen. Here are the ones worth pursuing:</p>
+
+    <h3>Marketo Certifications</h3>
+    <ul>
+        <li><strong>Adobe Certified Professional: Marketo Engage Business Practitioner.</strong> The entry-level Marketo cert. Covers campaign setup, lead management, and basic program building.</li>
+        <li><strong>Adobe Certified Expert: Marketo Engage Business Practitioner.</strong> The advanced cert that most job postings reference when they say "Marketo certified." Covers complex programs, revenue cycle analytics, and advanced scoring.</li>
+    </ul>
+
+    <h3>HubSpot Certifications</h3>
+    <ul>
+        <li><strong>HubSpot Marketing Software Certification.</strong> Free and accessible. Covers inbound methodology, email, forms, and workflows. Good starting point.</li>
+        <li><strong>HubSpot Marketing Hub Software Certification.</strong> More tactical. Covers the Marketing Hub features that MOps teams manage daily.</li>
+        <li><strong>HubSpot Revenue Operations Certification.</strong> Newer cert that aligns with the growing overlap between MOps and RevOps.</li>
+    </ul>
+
+    <h3>Salesforce Certifications</h3>
+    <ul>
+        <li><strong>Salesforce Administrator.</strong> The most valuable CRM cert for MOps professionals. Understanding Salesforce administration is required in most enterprise MOps roles.</li>
+        <li><strong>Salesforce Marketing Cloud Email Specialist.</strong> Relevant if you target organizations running SFMC.</li>
+    </ul>
+
+    <h3>Other Valuable Certifications</h3>
+    <ul>
+        <li><strong>Google Analytics Certification.</strong> Free and widely recognized. Useful for attribution and web analytics responsibilities.</li>
+        <li><strong>SQL fundamentals (various providers).</strong> Not a formal cert, but SQL proficiency is increasingly expected. DataCamp, Mode, or Codecademy all offer solid SQL courses.</li>
+    </ul>
+
+    <h2>Tools to Learn First</h2>
+    <p>You cannot learn every tool before your first job. Focus on the platforms that appear most frequently in job postings:</p>
+    <ol>
+        <li><strong>One MAP:</strong> HubSpot (free tier available) or Marketo (request a sandbox through Adobe)</li>
+        <li><strong>Salesforce:</strong> Get a free Developer Edition org and learn the basics of objects, fields, campaigns, and reports</li>
+        <li><strong>One integration tool:</strong> Zapier (free tier) or Make (free tier) to understand how tools connect</li>
+        <li><strong>Excel or Google Sheets:</strong> Data manipulation, VLOOKUP, pivot tables. This is foundational.</li>
+        <li><strong>Basic SQL:</strong> Mode Analytics or BigQuery sandbox. Even basic SELECT/JOIN/GROUP BY puts you ahead.</li>
+    </ol>
+    <p>For a full ranking of tools by job posting frequency, see our <a href="/tools/">MOps tool reviews</a>.</p>
+
+    <h2>Career Paths Into MOps</h2>
+    <p>People enter marketing operations from several directions:</p>
+
+    <h3>From Marketing</h3>
+    <p>The most common path. You start as a marketing coordinator or campaign manager, develop a reputation as the person who fixes the email templates and cleans the list imports, and gradually take on more technical work. Eventually, the title catches up to the work you are already doing.</p>
+
+    <h3>From Sales Operations or RevOps</h3>
+    <p>If you already manage Salesforce for a sales team, moving into MOps means learning the MAP side. The CRM skills transfer directly, and understanding the sales process is a real advantage in MOps.</p>
+
+    <h3>From IT or Engineering</h3>
+    <p>Technical people who want to be closer to business outcomes. The technical skills are there; the learning curve is marketing terminology, campaign strategy, and understanding what the marketing team actually needs.</p>
+
+    <h3>From Analytics</h3>
+    <p>Data analysts who want to move upstream from reporting into building the systems that generate the data. SQL, BI tools, and data modeling skills are directly applicable.</p>
+
+    <h3>Career Changers</h3>
+    <p>People from completely different fields. A certification, a free-tier platform project, and a willingness to start at the coordinator level gets you in the door. The field is growing fast enough that companies hire for aptitude, not just experience.</p>
+
+    <h2>Salary Expectations</h2>
+    <p>Marketing operations compensation varies significantly by seniority, location, and company size. Here are approximate ranges based on our <a href="/salary/">salary data</a>:</p>
+    <ul>
+        <li><strong>Entry-level (Coordinator, Specialist):</strong> $55,000 to $75,000</li>
+        <li><strong>Mid-level (Manager, Senior Specialist):</strong> $80,000 to $120,000</li>
+        <li><strong>Senior (Senior Manager, Principal):</strong> $110,000 to $160,000</li>
+        <li><strong>Director and above:</strong> $140,000 to $200,000+</li>
+    </ul>
+    <p>Remote roles, major metro locations, and enterprise companies tend to pay at the higher end. See our <a href="/salary/calculator/">salary calculator</a> for a more personalized estimate.</p>
+
+    <h2>How to Get Your First MOps Role</h2>
+    <ol>
+        <li><strong>Earn one certification.</strong> HubSpot Marketing Software (free) or Marketo Engage Business Practitioner.</li>
+        <li><strong>Build something real.</strong> Set up a HubSpot free account, build a lead capture workflow, create a lead scoring model, and document it as a portfolio project.</li>
+        <li><strong>Learn the vocabulary.</strong> Read our <a href="/glossary/">MOps glossary</a> so you can speak the language in interviews.</li>
+        <li><strong>Target the right job titles.</strong> Marketing Operations Coordinator, Marketing Automation Specialist, Marketing Technology Associate, CRM Coordinator.</li>
+        <li><strong>Network in MOps communities.</strong> MO Pros, MarketingOps.com, and LinkedIn MOps groups are where practitioners share openings and advice.</li>
+        <li><strong>Apply broadly.</strong> The field is growing at over 40% year-over-year. Companies are hiring faster than the talent pool is growing.</li>
+    </ol>
+
+    <h2>What to Expect in Your First Year</h2>
+    <p>Your first MOps role will likely involve a mix of campaign execution, list management, email QA, report building, and putting out fires. You will spend time learning the company's specific tech stack, data model, and internal processes. The learning curve is steep, but the skills compound quickly.</p>
+    <p>Within 12 to 18 months, you should understand the full lead lifecycle, be comfortable building campaigns independently, and start forming opinions about how to improve the systems you manage. That is when the career starts to accelerate.</p>
+</div>
+'''
+    body += newsletter_cta_html("Weekly career intel for marketing operations professionals.")
+    body += faq_html(faq_pairs)
+
+    schema = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs)
+    page = get_page_wrapper(
+        title=title,
+        description=description,
+        canonical_path="/careers/how-to-break-into-mops/",
+        body_content=body,
+        active_path="/careers/",
+        extra_head=schema,
+        body_class="page-inner",
+    )
+    write_page("careers/how-to-break-into-mops/index.html", page)
+    print(f"  Built: careers/how-to-break-into-mops/index.html")
+
+
+def build_careers_job_growth():
+    """Generate the 'Job Market Growth' page."""
+    title = "Marketing Operations Job Market Growth in 2026"
+    description = (
+        "Marketing operations job market trends and growth data. Hiring patterns,"
+        " in-demand skills, remote vs onsite, and where the MOps market is headed."
+    )
+    crumbs = [("Home", "/"), ("Careers", "/careers/"), ("Job Market Growth", None)]
+    bc_html = breadcrumb_html(crumbs)
+
+    faq_pairs = [
+        ("How fast is the MOps job market growing?",
+         "Marketing operations job postings have grown roughly 40% year-over-year based on our tracking data. The growth is driven by increased marketing technology adoption, the shift to data-driven marketing, and the expansion of RevOps functions that include MOps."),
+        ("Is marketing operations a good career in 2026?",
+         "Yes. Demand for MOps professionals continues to outpace supply. Salaries are competitive, remote options are common, and the skills are transferable across industries. The biggest risk is platform concentration: building your career around a single tool that loses market share."),
+        ("What MOps skills are most in demand?",
+         "Salesforce, HubSpot, Marketo, and data analysis skills appear most frequently in MOps job postings. SQL, BI tools (Tableau, Power BI, Looker), and integration platform experience (Zapier, Workato) are growing in demand. See our tools page for current rankings."),
+    ]
+
+    body = f'''{bc_html}
+<section class="page-header">
+    <h1>Marketing Operations Job Market Growth: 2026 Trends</h1>
+    <p class="lead">Where the MOps job market is, where it is going, and what it means for your career. Data from thousands of tracked job postings.</p>
+</section>
+<div class="container">
+    <p>Marketing operations has gone from a niche function to a core team at most growth-stage and enterprise companies. The data tells a clear story: more companies are hiring MOps professionals, the roles are getting more specialized, and compensation continues to rise.</p>
+    <p>This page covers the trends shaping the MOps job market in 2026.</p>
+
+    <h2>Market Growth by the Numbers</h2>
+    <p>Based on our analysis of 15,000+ marketing operations job postings, here is what the data shows:</p>
+    <ul>
+        <li><strong>Year-over-year posting growth:</strong> approximately 42%, measured by volume of new MOps-specific job listings</li>
+        <li><strong>Average time to fill:</strong> MOps roles stay open longer than general marketing roles, reflecting a talent shortage</li>
+        <li><strong>Salary trajectory:</strong> median MOps compensation has increased 8-12% annually over the past three years</li>
+        <li><strong>Remote availability:</strong> approximately 35-40% of MOps roles offer full remote, significantly higher than marketing roles overall</li>
+    </ul>
+
+    <h2>What Is Driving the Growth</h2>
+
+    <h3>Marketing Technology Proliferation</h3>
+    <p>The average enterprise marketing team uses 12 to 15 tools. Someone has to integrate, manage, and optimize that stack. That someone is the MOps team. As companies add tools, they add MOps headcount to manage them.</p>
+
+    <h3>Revenue Operations Expansion</h3>
+    <p>The RevOps model, which unifies marketing, sales, and customer success operations under one function, is creating new demand for MOps skills. Companies building RevOps teams need people who understand marketing technology, data flows, and campaign infrastructure. MOps professionals fit naturally.</p>
+
+    <h3>Data-Driven Marketing Mandates</h3>
+    <p>CMOs are under pressure to prove ROI on marketing spend. That requires attribution models, clean data, proper tracking, and reliable reporting. All of those are MOps responsibilities. The shift from "we think marketing works" to "we can prove marketing works" is a permanent change that sustains MOps demand.</p>
+
+    <h3>AI and Automation Adoption</h3>
+    <p>The adoption of AI tools in marketing (content generation, predictive scoring, intent data, chatbots) creates new infrastructure to manage. MOps teams are responsible for evaluating, implementing, and maintaining these tools. AI does not replace MOps; it expands the scope of what MOps manages.</p>
+
+    <h2>Hiring Patterns and Trends</h2>
+
+    <h3>Company Size Distribution</h3>
+    <p>MOps hiring is concentrated in mid-market (200 to 2,000 employees) and enterprise (2,000+) companies. Startups under 50 people rarely have dedicated MOps roles; the work is usually handled by a generalist marketer. The inflection point tends to happen around 100 to 200 employees, when marketing technology complexity justifies a specialist.</p>
+
+    <h3>Industry Distribution</h3>
+    <p>B2B SaaS companies dominate MOps hiring, followed by financial services, healthcare technology, and e-commerce. However, every industry with a mature marketing function hires MOps professionals. The skills transfer across verticals because the tools and processes are largely the same.</p>
+
+    <h3>Remote vs. Onsite</h3>
+    <p>MOps is well-suited to remote work. The job is platform management, data analysis, and cross-functional coordination, all of which work over a screen. Our data shows 35-40% of MOps postings are fully remote, 30-35% are hybrid, and 25-30% are onsite. The remote share has stabilized after post-pandemic adjustments.</p>
+
+    <h3>Specialization Trends</h3>
+    <p>Early MOps roles were generalist: one person doing everything from email sends to CRM admin. The market is increasingly specialized:</p>
+    <ul>
+        <li><strong>Marketing Automation Manager:</strong> focused on MAP administration and campaign operations</li>
+        <li><strong>Marketing Data Analyst:</strong> focused on attribution, reporting, and data quality</li>
+        <li><strong>Marketing Technology Manager:</strong> focused on tool evaluation, integration, and vendor management</li>
+        <li><strong>Campaign Operations Specialist:</strong> focused on email, landing pages, and program execution</li>
+        <li><strong>MOps Director/VP:</strong> strategic leadership, team building, and budget management</li>
+    </ul>
+
+    <h2>Skills Demand Shifts</h2>
+    <p>The skills employers want are shifting. Based on changes in job posting requirements over the past 12 months:</p>
+
+    <h3>Growing in Demand</h3>
+    <ul>
+        <li><strong>SQL and data analysis:</strong> showing up in more postings as companies expect MOps to query databases directly</li>
+        <li><strong>CDP and data platform experience:</strong> Segment, Hightouch, Census, and RudderStack mentions are increasing</li>
+        <li><strong>Revenue attribution:</strong> multi-touch attribution modeling is now expected at the senior level</li>
+        <li><strong>Integration platforms:</strong> Workato, Make, and n8n are appearing alongside (and sometimes replacing) Zapier</li>
+        <li><strong>AI tool management:</strong> experience evaluating and implementing AI-powered marketing tools</li>
+    </ul>
+
+    <h3>Stable Demand</h3>
+    <ul>
+        <li><strong>Salesforce:</strong> still the most-mentioned tool in MOps job postings by a wide margin</li>
+        <li><strong>HubSpot:</strong> strong and growing, especially in the mid-market</li>
+        <li><strong>Marketo:</strong> still required for enterprise B2B roles, though growing more slowly than HubSpot</li>
+        <li><strong>Excel/Sheets:</strong> still mentioned in a majority of postings. The basics remain foundational.</li>
+    </ul>
+
+    <h3>Declining in Mentions</h3>
+    <ul>
+        <li><strong>Pardot (Marketing Cloud Account Engagement):</strong> declining as Salesforce shifts investment to Marketing Cloud</li>
+        <li><strong>Google Analytics (UA):</strong> replaced by GA4. The skill is still needed, but the specific tool reference is changing.</li>
+    </ul>
+
+    <h2>Compensation Trends</h2>
+    <p>MOps salaries continue to rise faster than general marketing roles. The combination of technical skill requirements, talent shortages, and business-critical responsibilities creates upward pressure on compensation.</p>
+    <p>Key trends:</p>
+    <ul>
+        <li>Entry-level MOps roles now start $10,000 to $15,000 higher than equivalent marketing coordinator positions</li>
+        <li>The premium for Marketo certification is approximately 15-20% at the mid-level</li>
+        <li>Director-level MOps roles at enterprise companies routinely exceed $170,000 base</li>
+        <li>Remote roles have narrowed the geographic salary gap, but top-market premiums (SF, NYC, Boston) persist</li>
+    </ul>
+    <p>For current salary data, see our <a href="/salary/">salary benchmarks</a> and <a href="/salary/calculator/">salary calculator</a>.</p>
+
+    <h2>What This Means for Your Career</h2>
+    <p>The MOps job market in 2026 favors practitioners who:</p>
+    <ol>
+        <li><strong>Invest in platform depth.</strong> Knowing one MAP and one CRM deeply is more valuable than surface-level familiarity with five tools.</li>
+        <li><strong>Add data skills.</strong> SQL, BI tools, and basic data modeling increasingly separate senior MOps professionals from the pack.</li>
+        <li><strong>Stay platform-aware.</strong> The CDP and reverse ETL space is evolving fast. Understanding warehouse-native data activation is becoming a differentiator.</li>
+        <li><strong>Build business context.</strong> The MOps professionals who advance fastest can connect technical decisions to revenue impact.</li>
+    </ol>
+    <p>The market is not slowing down. If you are in MOps, the trajectory is in your favor. If you are considering entering the field, now is a good time. See our guide on <a href="/careers/how-to-break-into-mops/">how to break into marketing operations</a> for a step-by-step plan.</p>
+</div>
+'''
+    body += newsletter_cta_html("Weekly MOps job market data and career intelligence.")
+    body += faq_html(faq_pairs)
+
+    schema = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs)
+    page = get_page_wrapper(
+        title=title,
+        description=description,
+        canonical_path="/careers/job-growth/",
+        body_content=body,
+        active_path="/careers/",
+        extra_head=schema,
+        body_class="page-inner",
+    )
+    write_page("careers/job-growth/index.html", page)
+    print(f"  Built: careers/job-growth/index.html")
+
+
+def build_insights_page():
+    """Generate the insights hub page."""
+    title = "MOps Insights: Data and Analysis"
+    description = (
+        "Data-driven insights for marketing operations. Salary trends, tool adoption,"
+        " career guides, and job market analysis from MOps Report."
+    )
+    crumbs = [("Home", "/"), ("Insights", None)]
+    bc_html = breadcrumb_html(crumbs)
+
+    body = f'''{bc_html}
+<section class="page-header">
+    <h1>MOps Insights: Data-Driven Analysis</h1>
+    <p class="lead">Salary trends, tool adoption, career intelligence, and job market analysis for marketing operations professionals.</p>
+</section>
+<div class="container">
+    <p>MOps Report publishes data-driven analysis on the marketing operations profession. Every insight is built on real job posting data, tool usage patterns, and market research. No vendor spin, no pay-to-play rankings.</p>
+
+    <h2>Salary Intelligence</h2>
+    <p>Compensation data based on analysis of thousands of marketing operations job postings. Updated regularly.</p>
+    <ul>
+        <li><a href="/salary/">Salary Index</a> - Complete MOps salary benchmarks by seniority</li>
+        <li><a href="/salary/entry/">Entry-Level MOps Salaries</a> - Starting compensation for coordinators and specialists</li>
+        <li><a href="/salary/senior/">Senior MOps Salaries</a> - Compensation at the experienced IC level</li>
+        <li><a href="/salary/director/">Director-Level MOps Salaries</a> - Leadership track compensation</li>
+        <li><a href="/salary/vp/">VP of Marketing Operations Salaries</a> - Executive-level compensation</li>
+        <li><a href="/salary/remote/">Remote vs. Onsite Salaries</a> - How work arrangement affects pay</li>
+        <li><a href="/salary/vs-revops/">MOps vs. RevOps Salaries</a> - Side-by-side compensation comparison</li>
+        <li><a href="/salary/calculator/">Salary Calculator</a> - Estimate your market rate</li>
+    </ul>
+
+    <h2>Tool Reviews and Rankings</h2>
+    <p>Tool reviews ranked by employer demand. See which platforms companies actually require, not which ones have the biggest marketing budgets.</p>
+    <ul>
+        <li><a href="/tools/">MOps Tool Index</a> - All tools ranked by job posting frequency</li>
+        <li><a href="/tools/category/marketing-automation/">Marketing Automation</a> - Marketo, HubSpot, Eloqua, Braze</li>
+        <li><a href="/tools/category/crm/">CRM Platforms</a> - Salesforce, HubSpot, Dynamics 365</li>
+        <li><a href="/tools/category/analytics/">Analytics and BI</a> - Tableau, Looker, Power BI, Domo</li>
+        <li><a href="/tools/category/cdp/">Customer Data Platforms</a> - Segment, Hightouch, Census, RudderStack</li>
+        <li><a href="/tools/category/integration/">Integration and Automation</a> - Zapier, Make, Workato, n8n</li>
+        <li><a href="/tools/category/data-management/">Data Management</a> - ZoomInfo, RingLead, Clay, LeanData</li>
+    </ul>
+
+    <h2>Career Guides</h2>
+    <p>Practical guidance for entering and advancing in marketing operations.</p>
+    <ul>
+        <li><a href="/careers/">Career Guides Index</a> - All career resources</li>
+        <li><a href="/careers/how-to-break-into-mops/">How to Break Into Marketing Operations</a> - Skills, certs, paths, and salary expectations</li>
+        <li><a href="/careers/job-growth/">MOps Job Market Growth</a> - Hiring trends and demand data</li>
+    </ul>
+
+    <h2>Reference</h2>
+    <ul>
+        <li><a href="/glossary/">MOps Glossary</a> - Definitions for marketing operations terms</li>
+        <li><a href="/about/">About MOps Report</a> - Our methodology and approach</li>
+    </ul>
+</div>
+'''
+    body += newsletter_cta_html("Weekly insights for marketing operations professionals.")
+
+    page = get_page_wrapper(
+        title=title,
+        description=description,
+        canonical_path="/insights/",
+        body_content=body,
+        active_path="/insights/",
+        extra_head=get_breadcrumb_schema(crumbs),
+        body_class="page-inner",
+    )
+    write_page("insights/index.html", page)
+    print(f"  Built: insights/index.html")
+
+
+def build_blog_redirect():
+    """Generate /blog/ that redirects to /insights/ via meta refresh."""
+    content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=/insights/">
+    <link rel="canonical" href="https://mopsreport.com/insights/">
+    <title>Redirecting to MOps Insights</title>
+</head>
+<body>
+    <p>Redirecting to <a href="/insights/">MOps Insights</a>...</p>
+</body>
+</html>'''
+    from templates import write_page as wp, OUTPUT_DIR as od
+    full_path = os.path.join(od, "blog/index.html")
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+    with open(full_path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"  Built: blog/index.html (redirect to /insights/)")
+
+
 def build_404_page():
     title = "Page Not Found (404) on MOps Report Site"
     description = (
@@ -402,6 +858,15 @@ def main():
     build_privacy_page()
     build_terms_page()
     build_404_page()
+
+    print("\n  Building career pages...")
+    build_careers_index()
+    build_careers_break_into_mops()
+    build_careers_job_growth()
+
+    print("\n  Building insights and blog...")
+    build_insights_page()
+    build_blog_redirect()
 
     print("\n  Building salary pages...")
     build_all_salary_pages(PROJECT_DIR)
