@@ -12,7 +12,7 @@ CSS_VERSION = "1"
 CTA_HREF = "/newsletter/"
 CTA_LABEL = "Get the Weekly Brief"
 
-SIGNUP_WORKER_URL = "https://mops-newsletter-signup.rome-workers.workers.dev/subscribe"
+SIGNUP_WORKER_URL = "https://newsletter-subscribe.rome-workers.workers.dev/subscribe"
 
 GA_MEASUREMENT_ID = "G-T8MN0GWHSM"
 GOOGLE_SITE_VERIFICATION = ""  # Set to verification filename (e.g., "google1234abcd.html") to generate file
