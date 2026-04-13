@@ -833,10 +833,115 @@ def build_sitemap():
 
 
 def build_robots():
-    content = f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n"
+    content = f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+
+# AI/LLM crawlers - explicitly allowed for AI search citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+"""
     with open(os.path.join(OUTPUT_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(content)
     print(f"  Built: robots.txt")
+
+
+def build_llms_txt():
+    content = f"""# MOps Report
+
+> MOps Report is an independent career intelligence platform for marketing operations professionals. The site provides salary benchmarks by seniority and location, vendor-neutral tool reviews for marketing automation platforms, CDPs, integration tools, and analytics, a searchable glossary of MOps terminology, and career guides for breaking into and advancing in marketing operations. All data is updated weekly and free to access.
+
+## Core Pages
+- [Homepage]({SITE_URL}/)
+- [About]({SITE_URL}/about/)
+- [Newsletter]({SITE_URL}/newsletter/)
+
+## Salary Data
+- [Salary Index]({SITE_URL}/salary/): Aggregate MOps salary benchmarks
+- [Entry-Level]({SITE_URL}/salary/entry/)
+- [Mid-Level]({SITE_URL}/salary/mid/)
+- [Senior]({SITE_URL}/salary/senior/)
+- [Director]({SITE_URL}/salary/director/)
+- [VP]({SITE_URL}/salary/vp/)
+- [Remote]({SITE_URL}/salary/remote/)
+- [Salary Calculator]({SITE_URL}/salary/calculator/)
+
+### Salary Comparisons
+- [MOps vs RevOps]({SITE_URL}/salary/vs-revops/)
+- [MOps vs Sales Ops]({SITE_URL}/salary/vs-sales-ops/)
+- [MOps vs Data Analyst]({SITE_URL}/salary/vs-data-analyst/)
+- [MOps vs Demand Gen]({SITE_URL}/salary/vs-demand-gen/)
+
+## Tool Reviews
+- [Tools Index]({SITE_URL}/tools/): All MOps tools reviewed
+- [Marketing Automation]({SITE_URL}/tools/category/marketing-automation/)
+- [CDP]({SITE_URL}/tools/category/cdp/)
+- [Data Management]({SITE_URL}/tools/category/data-management/)
+- [Analytics]({SITE_URL}/tools/category/analytics/)
+- [Integration]({SITE_URL}/tools/category/integration/)
+
+### Tool Comparisons
+- [Marketo vs HubSpot]({SITE_URL}/tools/compare/marketo-vs-hubspot/)
+- [Salesforce vs HubSpot]({SITE_URL}/tools/compare/salesforce-vs-hubspot/)
+- [Make vs Zapier]({SITE_URL}/tools/compare/make-vs-zapier/)
+- [Tableau vs Looker]({SITE_URL}/tools/compare/tableau-vs-looker/)
+
+## Career Resources
+- [Career Guides]({SITE_URL}/careers/)
+- [How to Break Into MOps]({SITE_URL}/careers/how-to-break-into-mops/)
+- [Job Market Growth]({SITE_URL}/careers/job-growth/)
+
+## Glossary
+- [Glossary Index]({SITE_URL}/glossary/): MOps terminology defined
+- [Marketing Automation Platform]({SITE_URL}/glossary/marketing-automation-platform/)
+- [Customer Data Platform]({SITE_URL}/glossary/customer-data-platform/)
+- [Lead Scoring]({SITE_URL}/glossary/lead-scoring/)
+- [Marketing Attribution]({SITE_URL}/glossary/marketing-attribution/)
+- [Email Deliverability]({SITE_URL}/glossary/email-deliverability/)
+"""
+    with open(os.path.join(OUTPUT_DIR, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"  Built: llms.txt")
 
 
 # ---------------------------------------------------------------------------
@@ -890,6 +995,7 @@ def main():
     print("\n  Building meta files...")
     build_sitemap()
     build_robots()
+    build_llms_txt()
 
     with open(os.path.join(OUTPUT_DIR, "CNAME"), "w", encoding="utf-8") as f:
         f.write("mopsreport.com\n")
