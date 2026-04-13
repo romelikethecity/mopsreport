@@ -539,7 +539,8 @@ def build_careers_break_into_mops():
     body += newsletter_cta_html("Weekly career intel for marketing operations professionals.")
     body += faq_html(faq_pairs)
 
-    schema = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs)
+    word_count = len(body.split())
+    schema = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs) + get_article_schema(title, description, "how-to-break-into-mops", "2026-04-01", word_count, url_path="/careers/how-to-break-into-mops/")
     page = get_page_wrapper(
         title=title,
         description=description,
@@ -676,7 +677,8 @@ def build_careers_job_growth():
     body += newsletter_cta_html("Weekly MOps job market data and career intelligence.")
     body += faq_html(faq_pairs)
 
-    schema = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs)
+    word_count = len(body.split())
+    schema = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs) + get_article_schema(title, description, "job-growth", "2026-04-01", word_count, url_path="/careers/job-growth/")
     page = get_page_wrapper(
         title=title,
         description=description,

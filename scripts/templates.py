@@ -359,9 +359,9 @@ def get_faq_schema(qa_pairs):
     return f'    <script type="application/ld+json">{json.dumps(schema)}</script>\n'
 
 
-def get_article_schema(title, description, slug, date_published, word_count):
-    """Generate Article JSON-LD for insight articles."""
-    url = f"{SITE_URL}/insights/{slug}/"
+def get_article_schema(title, description, slug, date_published, word_count, url_path=None):
+    """Generate Article JSON-LD for content pages."""
+    url = f"{SITE_URL}{url_path}" if url_path else f"{SITE_URL}/insights/{slug}/"
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
