@@ -1,0 +1,51 @@
+# MOps Report
+
+> MOps Report is an independent career intelligence platform for marketing operations professionals. The site provides salary benchmarks by seniority and location, vendor-neutral tool reviews for marketing automation platforms, CDPs, integration tools, and analytics, a searchable glossary of MOps terminology, and career guides for breaking into and advancing in marketing operations. All data is updated weekly and free to access.
+
+## Core Pages
+- [Homepage](https://mopsreport.com/)
+- [About](https://mopsreport.com/about/)
+- [Newsletter](https://mopsreport.com/newsletter/)
+
+## Salary Data
+- [Salary Index](https://mopsreport.com/salary/): Aggregate MOps salary benchmarks
+- [Entry-Level](https://mopsreport.com/salary/entry/)
+- [Mid-Level](https://mopsreport.com/salary/mid/)
+- [Senior](https://mopsreport.com/salary/senior/)
+- [Director](https://mopsreport.com/salary/director/)
+- [VP](https://mopsreport.com/salary/vp/)
+- [Remote](https://mopsreport.com/salary/remote/)
+- [Salary Calculator](https://mopsreport.com/salary/calculator/)
+
+### Salary Comparisons
+- [MOps vs RevOps](https://mopsreport.com/salary/vs-revops/)
+- [MOps vs Sales Ops](https://mopsreport.com/salary/vs-sales-ops/)
+- [MOps vs Data Analyst](https://mopsreport.com/salary/vs-data-analyst/)
+- [MOps vs Demand Gen](https://mopsreport.com/salary/vs-demand-gen/)
+
+## Tool Reviews
+- [Tools Index](https://mopsreport.com/tools/): All MOps tools reviewed
+- [Marketing Automation](https://mopsreport.com/tools/category/marketing-automation/)
+- [CDP](https://mopsreport.com/tools/category/cdp/)
+- [Data Management](https://mopsreport.com/tools/category/data-management/)
+- [Analytics](https://mopsreport.com/tools/category/analytics/)
+- [Integration](https://mopsreport.com/tools/category/integration/)
+
+### Tool Comparisons
+- [Marketo vs HubSpot](https://mopsreport.com/tools/compare/marketo-vs-hubspot/)
+- [Salesforce vs HubSpot](https://mopsreport.com/tools/compare/salesforce-vs-hubspot/)
+- [Make vs Zapier](https://mopsreport.com/tools/compare/make-vs-zapier/)
+- [Tableau vs Looker](https://mopsreport.com/tools/compare/tableau-vs-looker/)
+
+## Career Resources
+- [Career Guides](https://mopsreport.com/careers/)
+- [How to Break Into MOps](https://mopsreport.com/careers/how-to-break-into-mops/)
+- [Job Market Growth](https://mopsreport.com/careers/job-growth/)
+
+## Glossary
+- [Glossary Index](https://mopsreport.com/glossary/): MOps terminology defined
+- [Marketing Automation Platform](https://mopsreport.com/glossary/marketing-automation-platform/)
+- [Customer Data Platform](https://mopsreport.com/glossary/customer-data-platform/)
+- [Lead Scoring](https://mopsreport.com/glossary/lead-scoring/)
+- [Marketing Attribution](https://mopsreport.com/glossary/marketing-attribution/)
+- [Email Deliverability](https://mopsreport.com/glossary/email-deliverability/)

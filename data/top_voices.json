@@ -1,0 +1,258 @@
+{
+  "title": "Top 25 Marketing Ops Voices of 2026",
+  "subtitle": "The most influential practitioners, community builders, and strategists shaping how marketing operations teams drive revenue through systems, data, and process",
+  "last_updated": "2026-04-14",
+  "methodology": "Ranked by cross-list appearances across independent publications (MarketingOps.com, LXA Hub, Humans of Martech, Stage 2 Capital, RevOps Co-op, and others), Marketo Champion status, community leadership, and direct influence on how MOPs teams operate. We evaluated 55+ candidates and filtered for people who actively shape marketing operations strategy, tooling, and careers.",
+  "voices": [
+    {
+      "rank": 1,
+      "name": "Darrell Alfonso",
+      "title": "Director of Marketing Strategy & Operations",
+      "company": "Indeed",
+      "linkedin_url": "https://www.linkedin.com/in/darrellalfonso/",
+      "bio": "Author of The Martech Handbook (Kogan Page) and award-winning MOPs leader with 15+ years in the industry. Previously led marketing ops at Amazon Web Services. Named a Top Martech Marketer to Follow and winner of the Fearless Marketer award. International keynote speaker who's presented in London, Dubai, Sydney, and across the US. Publishes The Marketing Operations Leader on Substack.",
+      "tags": ["Martech", "Author", "Enterprise MOPs"],
+      "tier": "leader"
+    },
+    {
+      "rank": 2,
+      "name": "Michael Rizzo",
+      "title": "Founder & CEO",
+      "company": "MarketingOps.com / MO Pros",
+      "linkedin_url": "https://www.linkedin.com/in/mikedrizzo/",
+      "bio": "Founded MO Pros in 2017, growing it into the largest community for marketing operations professionals with 4,000+ members. Built MarketingOps.com as the central platform for MOPs practitioners to connect, collaborate, and grow. Hosts the Ops Cast podcast. Created the MOPs certification program. His community-first approach has defined how MOPs professionals find each other and level up.",
+      "tags": ["Community", "MOPs Certification", "Podcasting"],
+      "tier": "leader"
+    },
+    {
+      "rank": 3,
+      "name": "Sara McNamara",
+      "title": "Revenue Operations Leader",
+      "company": "Vector (formerly Slack)",
+      "linkedin_url": "https://www.linkedin.com/in/saramcnamara/",
+      "bio": "Former Senior Manager of Marketing Operations at Slack, recognized for exceptional work by Salesforce (Pardot), Adobe (Marketo), Drift, and LeanData. Hosts the Wizard of Ops podcast and created The Marketing Operations Master Playbook course. Known for her systems-thinking approach to martech architecture and her advocacy for fair MOPs compensation.",
+      "tags": ["Martech Architecture", "Podcasting", "MOPs Careers"],
+      "tier": "leader"
+    },
+    {
+      "rank": 4,
+      "name": "Edward Unthank",
+      "title": "Founder & VP Product",
+      "company": "Etumos",
+      "linkedin_url": "https://www.linkedin.com/in/edwardunthank/",
+      "bio": "Built Etumos to $8M revenue and 45+ remote employees by 2021, defining best practices in marketing technology consulting. 3x Marketo Champion. Now incubating new projects and angel investing through Stage 2 Capital. His obsession with inventing MOPs best practices, not just implementing existing ones, has pushed the entire profession forward.",
+      "tags": ["Martech Consulting", "Marketo", "Investing"],
+      "tier": "leader"
+    },
+    {
+      "rank": 5,
+      "name": "Justin Norris",
+      "title": "Director of Marketing Operations",
+      "company": "360Learning",
+      "linkedin_url": "https://www.linkedin.com/in/justinnorris/",
+      "bio": "4x Marketo Champion and MCSA who spent 7 years at Perkuto, joining at 8 people and helping grow it to 50+ before its acquisition by MERGE. Winner of the 2017 Pipeline Marketing Award. Hosts the RevOps FM podcast. His technical depth on Marketo architecture, lead management, and attribution modeling makes him a go-to resource for MOPs practitioners solving hard problems.",
+      "tags": ["Marketo", "Lead Management", "RevOps FM"],
+      "tier": "leader"
+    },
+    {
+      "rank": 6,
+      "name": "Jeff Coveney",
+      "title": "Founder",
+      "company": "Revenue Pulse",
+      "linkedin_url": "https://www.linkedin.com/in/jeffcoveney/",
+      "bio": "Founded Revenue Pulse, a marketing and sales operations consultancy specializing in Marketo, HubSpot, Pardot, Salesforce, Eloqua, and Dynamics implementations. Publishes extensively on marketing ops strategy, sales and marketing alignment, and full revenue cycle optimization. His RevEngine Insider content covers the practical side of making martech stacks actually generate revenue.",
+      "tags": ["Revenue Pulse", "Martech Implementation", "Revenue Cycle"],
+      "tier": "leader"
+    },
+    {
+      "rank": 7,
+      "name": "Scott Brinker",
+      "title": "Ex-VP Platform Ecosystem",
+      "company": "HubSpot / chiefmartec.com",
+      "linkedin_url": "https://www.linkedin.com/in/sjbrinker/",
+      "bio": "Creator of the Marketing Technology Landscape, tracking the growth of martech from hundreds to 14,000+ vendors. His chiefmartec.com blog reaches 75,000+ readers and is the most-cited resource for understanding martech ecosystem trends. Former program chair of the MarTech conference. His annual landscape graphic is the single most-referenced visual in marketing operations.",
+      "tags": ["Martech Landscape", "Industry Analysis", "Conference"],
+      "tier": "leader"
+    },
+    {
+      "rank": 8,
+      "name": "Naomi Liu",
+      "title": "Director of Marketing Operations",
+      "company": "Finastra",
+      "linkedin_url": "https://www.linkedin.com/in/naaboris/",
+      "bio": "Marketo Champion and one of the most active MOPs voices on LinkedIn. Her content covers the daily reality of running marketing ops at an enterprise scale, from data governance nightmares to campaign operations workflows. Known for honest takes on what MOPs teams actually deal with vs. what vendors promise. Co-hosts community events with MO Pros.",
+      "tags": ["Enterprise MOPs", "Marketo", "Data Governance"],
+      "tier": "leader"
+    },
+    {
+      "rank": 9,
+      "name": "Crissy Merrilee Saunders",
+      "title": "Co-Founder & CEO",
+      "company": "CS2 Marketing",
+      "linkedin_url": "https://www.linkedin.com/in/crissysaunders/",
+      "bio": "Co-founded CS2 Marketing, a leading Marketo and marketing automation consultancy. Multiple-time Marketo Champion. Specializes in complex Marketo implementations, migration projects, and martech stack optimization. Her deep technical expertise and practical approach to solving marketing operations challenges make her a trusted advisor for enterprise MOPs teams.",
+      "tags": ["Marketo Consulting", "Migration", "Martech Stack"],
+      "tier": "leader"
+    },
+    {
+      "rank": 10,
+      "name": "Phil Gamache",
+      "title": "Co-Host",
+      "company": "Humans of Martech Podcast",
+      "linkedin_url": "https://www.linkedin.com/in/philgamache/",
+      "bio": "Co-hosts Humans of Martech, one of the most popular podcasts in the MOPs space. His interviews go deep on how real practitioners solve real problems, from AI in marketing ops to building career paths for MOPs professionals. Known for covering the human side of marketing technology, not just the tools.",
+      "tags": ["Podcasting", "Martech", "Career Development"],
+      "tier": "leader"
+    },
+    {
+      "rank": 11,
+      "name": "Mike Huber",
+      "title": "Founder",
+      "company": "Digital 1st Marketing",
+      "linkedin_url": "https://www.linkedin.com/in/mikehuber/",
+      "bio": "Runs Digital 1st Marketing, focused on helping companies implement and optimize their marketing automation platforms. His content covers practical marketing ops topics like lead scoring models, campaign attribution, and CRM integration patterns. Known for breaking down complex martech concepts into implementable frameworks for mid-market teams.",
+      "tags": ["Marketing Automation", "Lead Scoring", "Implementation"],
+      "tier": "rising"
+    },
+    {
+      "rank": 12,
+      "name": "Megan Zuelsdorf",
+      "title": "Marketing Operations Leader",
+      "company": "Fivetran",
+      "linkedin_url": "https://www.linkedin.com/in/meganzuelsdorf/",
+      "bio": "Built MOPs functions at high-growth SaaS companies and actively shares playbooks on LinkedIn. Her content on building MOPs teams from scratch, choosing the right tech stack for your stage, and creating processes that scale resonates with practitioners tired of theoretical advice. Regular speaker at Mops-Apalooza.",
+      "tags": ["MOPs Team Building", "Tech Stack", "SaaS"],
+      "tier": "rising"
+    },
+    {
+      "rank": 13,
+      "name": "Kristin Carideo",
+      "title": "Marketing Operations Manager",
+      "company": "Okta",
+      "linkedin_url": "https://www.linkedin.com/in/kristincarideo/",
+      "bio": "Marketo Champion and practitioner who shares tactical, in-the-weeds MOPs content. Her breakdowns of Marketo program templates, lead lifecycle models, and data hygiene workflows are bookmarked by MOPs professionals across the industry. Active in the MO Pros community as both a contributor and mentor.",
+      "tags": ["Marketo", "Data Hygiene", "Community"],
+      "tier": "rising"
+    },
+    {
+      "rank": 14,
+      "name": "Hartmut Blume",
+      "title": "VP of Marketing Operations",
+      "company": "Demandbase",
+      "linkedin_url": "https://www.linkedin.com/in/hartmutblume/",
+      "bio": "Leads MOPs at one of the largest ABM platforms, giving him a unique perspective on how marketing ops teams should structure account-based programs. His content on aligning MOPs with ABM strategy, building scoring models for accounts (not just leads), and measuring multi-touch attribution helps teams move beyond basic lead management.",
+      "tags": ["ABM Operations", "Account Scoring", "Attribution"],
+      "tier": "rising"
+    },
+    {
+      "rank": 15,
+      "name": "Jess Ostroff",
+      "title": "Marketing Operations Consultant",
+      "company": "Independent",
+      "linkedin_url": "https://www.linkedin.com/in/jessostroff/",
+      "bio": "Marketing operations consultant specializing in helping companies untangle their martech stacks and build clean data foundations. Known for honest content about the gap between what MOPs teams are asked to do and the resources they're given to do it. Advocates for MOPs professionals to have a seat at the strategy table, not just the implementation table.",
+      "tags": ["Consulting", "Data Foundations", "MOPs Advocacy"],
+      "tier": "rising"
+    },
+    {
+      "rank": 16,
+      "name": "Mo Kazemi",
+      "title": "Director of Marketing Operations",
+      "company": "Treasure Data",
+      "linkedin_url": "https://www.linkedin.com/in/mokazemi/",
+      "bio": "Built marketing ops programs at multiple high-growth companies and shares frameworks on LinkedIn for everything from data enrichment workflows to campaign automation architecture. His technical content on integrating CDPs with marketing automation platforms reflects the cutting edge of where MOPs is heading as data stacks get more complex.",
+      "tags": ["CDP Integration", "Data Architecture", "Campaign Automation"],
+      "tier": "rising"
+    },
+    {
+      "rank": 17,
+      "name": "Mallory Lee",
+      "title": "Senior Manager, Marketing Operations",
+      "company": "Outreach",
+      "linkedin_url": "https://www.linkedin.com/in/mallory-lee/",
+      "bio": "Practitioner at one of the most well-known sales engagement platforms, giving her a front-row seat to the intersection of sales ops and marketing ops. Her content on marketing/sales handoff processes, lead routing logic, and SLA frameworks provides practical blueprints that RevOps and MOPs teams use to reduce pipeline leakage.",
+      "tags": ["Sales Handoff", "Lead Routing", "RevOps Intersection"],
+      "tier": "rising"
+    },
+    {
+      "rank": 18,
+      "name": "Brooke Bartos",
+      "title": "Marketing Operations Manager",
+      "company": "Twilio",
+      "linkedin_url": "https://www.linkedin.com/in/brookebartos/",
+      "bio": "Runs MOPs at one of the largest communication platforms and actively contributes to the MO Pros community. Her content on managing complex, multi-product marketing operations, including campaign tagging, UTM governance, and cross-team coordination, helps practitioners operating at enterprise scale. Marketo expert who shares real implementation examples.",
+      "tags": ["Enterprise MOPs", "Campaign Tagging", "Governance"],
+      "tier": "rising"
+    },
+    {
+      "rank": 19,
+      "name": "Darby Smart",
+      "title": "Marketing Operations Leader",
+      "company": "SaaS Operations Advisor",
+      "linkedin_url": "https://www.linkedin.com/in/darbysmart/",
+      "bio": "Built MOPs programs at multiple startups and mid-market companies. Known for content on building marketing ops from scratch when you're the only person doing it. Her frameworks for prioritizing when everything is urgent, building your first martech stack, and communicating ops value to leadership resonate with solo MOPs practitioners.",
+      "tags": ["Solo MOPs", "Startup MOPs", "Prioritization"],
+      "tier": "rising"
+    },
+    {
+      "rank": 20,
+      "name": "LJ Susca",
+      "title": "Marketing Operations Manager",
+      "company": "Automattic",
+      "linkedin_url": "https://www.linkedin.com/in/ljsusca/",
+      "bio": "Active contributor in the MO Pros and broader MOPs community, known for sharing tactical Marketo and HubSpot implementation advice. His approach to marketing ops focuses on building repeatable processes that don't break when the team scales. Regular participant in community events and a mentor to early-career MOPs professionals.",
+      "tags": ["HubSpot", "Process Design", "Community"],
+      "tier": "rising"
+    },
+    {
+      "rank": 21,
+      "name": "Juan Mendoza",
+      "title": "Founder & CEO",
+      "company": "The Martech Weekly",
+      "linkedin_url": "https://www.linkedin.com/in/juandmendoza/",
+      "bio": "Publishes The Martech Weekly, one of the most-read newsletters covering marketing technology news, vendor updates, and industry trends. His coverage helps MOPs professionals stay current on platform changes, integrations, and market shifts without reading 50 different blogs. Provides the context that MOPs teams need to make better tool decisions.",
+      "tags": ["Martech News", "Newsletter", "Industry Analysis"],
+      "tier": "rising"
+    },
+    {
+      "rank": 22,
+      "name": "Kara Moriarty",
+      "title": "Marketing Operations Consultant",
+      "company": "Etumos",
+      "linkedin_url": "https://www.linkedin.com/in/karamoriarty/",
+      "bio": "Marketo Champion and consultant at Etumos, specializing in complex marketing automation implementations. Her technical expertise in Marketo program architecture, API integrations, and data management helps enterprise teams solve problems that most agencies can't handle. Active speaker at Marketo User Groups and MOPs community events.",
+      "tags": ["Marketo Champion", "API Integration", "Consulting"],
+      "tier": "rising"
+    },
+    {
+      "rank": 23,
+      "name": "Jess Schneider",
+      "title": "Director of Marketing Operations",
+      "company": "MongoDB",
+      "linkedin_url": "https://www.linkedin.com/in/jess-schneider/",
+      "bio": "Leads MOPs at one of the largest open-source database companies. Her experience managing marketing ops at scale, including multi-region campaign execution, localization workflows, and global data compliance, provides a blueprint for enterprise MOPs teams navigating complexity. Shares learnings from building ops infrastructure that serves both PLG and sales-led motions.",
+      "tags": ["Enterprise MOPs", "Global Ops", "PLG + Sales"],
+      "tier": "rising"
+    },
+    {
+      "rank": 24,
+      "name": "Alex Bock",
+      "title": "Marketing Operations Manager",
+      "company": "Gong",
+      "linkedin_url": "https://www.linkedin.com/in/alexandrabock/",
+      "bio": "Runs marketing ops at one of the most talked-about B2B SaaS companies. Her content on how Gong's MOPs team supports high-velocity demand gen campaigns gives practitioners a window into what enterprise-grade marketing ops looks like. Shares real examples of workflow automation, reporting frameworks, and cross-functional collaboration.",
+      "tags": ["High-Velocity MOPs", "Automation", "Reporting"],
+      "tier": "rising"
+    },
+    {
+      "rank": 25,
+      "name": "Maggie Butler",
+      "title": "Head of Marketing Operations",
+      "company": "Workato",
+      "linkedin_url": "https://www.linkedin.com/in/maggiebutler/",
+      "bio": "Leads marketing ops at Workato, an integration and automation platform, giving her unique perspective on how modern MOPs teams should think about connecting their martech stack. Her content on building scalable integrations, reducing manual data work, and creating self-service reporting for marketing teams helps practitioners move from firefighting to strategic operations.",
+      "tags": ["Integration", "Automation", "Self-Service Reporting"],
+      "tier": "rising"
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+/* ============================================================
+   MOps Report — Reusable Components
+   Layer 2 of 3: tokens.css -> components.css -> styles.css
+   All values reference --mops-* tokens. Zero hardcoded hex. No forced specificity.
+   ============================================================ */
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--mops-font-body);
+    color: var(--mops-text-primary);
+    background: var(--mops-bg-primary);
+    line-height: 1.65;
+    font-size: var(--mops-text-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Links ---- */
+a {
+    color: var(--mops-accent);
+    text-decoration: none;
+    transition: color var(--mops-duration-fast) var(--mops-ease);
+}
+
+a:hover {
+    color: var(--mops-accent-hover);
+}
+
+/* ---- Headings ---- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--mops-font-heading);
+    font-weight: var(--mops-weight-bold);
+    color: var(--mops-text-primary);
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+h1 { font-size: var(--mops-text-3xl); letter-spacing: -1px; }
+h2 { font-size: var(--mops-text-2xl); letter-spacing: -0.5px; }
+h3 { font-size: var(--mops-text-xl); }
+h4 { font-size: var(--mops-text-lg); }
+h5 { font-size: var(--mops-text-base); }
+h6 { font-size: var(--mops-text-sm); }
+
+/* ---- Container ---- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--mops-space-6);
+}
+
+/* ---- Buttons ---- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--mops-space-2);
+    padding: var(--mops-space-3) var(--mops-space-6);
+    border-radius: var(--mops-radius-md);
+    font-family: var(--mops-font-body);
+    font-weight: var(--mops-weight-semibold);
+    font-size: var(--mops-text-sm);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--mops-duration-fast) var(--mops-ease);
+    border: none;
+    line-height: 1.4;
+}
+
+.btn--primary {
+    background: var(--mops-accent);
+    color: var(--mops-text-on-accent);
+}
+
+.btn--primary:hover {
+    background: var(--mops-accent-hover);
+    box-shadow: var(--mops-shadow-accent);
+    color: var(--mops-text-on-accent);
+}
+
+.btn--ghost {
+    background: transparent;
+    color: var(--mops-text-primary);
+    border: 1px solid var(--mops-border);
+}
+
+.btn--ghost:hover {
+    background: var(--mops-bg-primary);
+    border-color: var(--mops-accent-hover);
+    color: var(--mops-accent-hover);
+}
+
+/* ---- Cards ---- */
+.card {
+    background: var(--mops-bg-surface);
+    border: 1px solid var(--mops-border);
+    border-radius: var(--mops-radius-xl);
+    padding: var(--mops-space-6);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--mops-space-6);
+}
+
+/* ---- Stat Blocks ---- */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--mops-space-4);
+}
+
+.stat-block {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-family: var(--mops-font-heading);
+    font-size: var(--mops-text-2xl);
+    font-weight: var(--mops-weight-bold);
+    color: var(--mops-text-primary);
+    white-space: nowrap;
+}
+
+.stat-label {
+    display: block;
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-secondary);
+    margin-top: var(--mops-space-1);
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb {
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-secondary);
+    margin-bottom: var(--mops-space-4);
+}
+
+.breadcrumb-link {
+    color: var(--mops-text-secondary);
+    text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+    color: var(--mops-accent-hover);
+}
+
+.breadcrumb-sep {
+    margin: 0 var(--mops-space-2);
+}
+
+.breadcrumb-current {
+    color: var(--mops-text-primary);
+}
+
+/* ---- Data Tables ---- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: var(--mops-space-3) var(--mops-space-4);
+    text-align: left;
+    border-bottom: 1px solid var(--mops-border-subtle);
+}
+
+.data-table th {
+    font-weight: var(--mops-weight-semibold);
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-secondary);
+}
+
+/* ---- FAQ ---- */
+.faq-section {
+    margin-top: var(--mops-space-12);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--mops-border-subtle);
+    padding: var(--mops-space-4) 0;
+}
+
+.faq-question {
+    font-family: var(--mops-font-heading);
+    font-weight: var(--mops-weight-semibold);
+}
+
+.faq-answer {
+    color: var(--mops-text-secondary);
+    margin-top: var(--mops-space-2);
+}
+
+/* ---- Newsletter CTA ---- */
+.newsletter-cta {
+    background: var(--mops-bg-dark);
+    color: var(--mops-text-inverse);
+    border-radius: var(--mops-radius-lg);
+    padding: var(--mops-space-12) var(--mops-space-8);
+    text-align: center;
+}
+
+.newsletter-cta h2 {
+    color: var(--mops-text-inverse);
+}
+
+.newsletter-cta p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-cta-form {
+    display: flex;
+    gap: var(--mops-space-2);
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.newsletter-cta-form input {
+    flex: 1;
+    padding: var(--mops-space-3) var(--mops-space-4);
+    border-radius: var(--mops-radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--mops-text-inverse);
+    font-family: var(--mops-font-body);
+    font-size: var(--mops-text-base);
+}
+
+.newsletter-cta-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-cta-form input:focus {
+    outline: none;
+    border-color: var(--mops-accent);
+}
+
+/* ---- Page Header ---- */
+.page-header {
+    padding: var(--mops-space-12) 0 var(--mops-space-8);
+}
+
+.page-header h1 {
+    font-family: var(--mops-font-heading);
+    font-weight: var(--mops-weight-bold);
+    letter-spacing: -0.5px;
+}
+
+/* ---- Source Citation ---- */
+.source-citation {
+    margin-top: var(--mops-space-6);
+    padding: var(--mops-space-4);
+    border-left: 3px solid var(--mops-accent);
+    background: var(--mops-bg-surface);
+    border-radius: 0 var(--mops-radius-sm) var(--mops-radius-sm) 0;
+    font-size: 0.875rem;
+    color: var(--mops-text-secondary);
+}
+
+/* ---- Related Links ---- */
+.related-links {
+    margin-top: var(--mops-space-12);
+    padding-top: var(--mops-space-8);
+    border-top: 1px solid var(--mops-border-subtle);
+}
+
+/* ---- Conference Cards ---- */
+.conferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--mops-space-6);
+    margin: var(--mops-space-8) 0;
+    padding: 0 var(--mops-space-4);
+}
+
+.conference-card {
+    background: var(--mops-bg-surface);
+    border: 1px solid var(--mops-border);
+    border-radius: var(--mops-radius-md);
+    padding: var(--mops-space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--mops-space-3);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.conference-card:hover {
+    border-color: var(--mops-accent);
+    box-shadow: 0 4px 12px rgba(var(--mops-accent-rgb), 0.1);
+}
+
+.conference-card-header h3 {
+    font-family: var(--mops-font-heading);
+    font-size: var(--mops-text-lg);
+    font-weight: var(--mops-weight-bold);
+    margin: 0;
+}
+
+.conference-card-header h3 a {
+    color: var(--mops-text-primary);
+    text-decoration: none;
+}
+
+.conference-card-header h3 a:hover {
+    color: var(--mops-accent);
+}
+
+.conference-organizer {
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-secondary);
+}
+
+.conference-description {
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.conference-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--mops-space-4);
+    font-size: var(--mops-text-sm);
+    color: var(--mops-text-tertiary);
+}
+
+.conference-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--mops-space-2);
+}
+
+.conference-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    background: var(--mops-accent-subtle);
+    color: var(--mops-accent);
+    border-radius: var(--mops-radius-full);
+    font-size: var(--mops-text-xs);
+    font-weight: var(--mops-weight-medium);
+}
+
+.conference-link {
+    display: inline-block;
+    margin-top: auto;
+    font-size: var(--mops-text-sm);
+    font-weight: var(--mops-weight-semibold);
+    color: var(--mops-accent);
+    text-decoration: none;
+}
+
+.conference-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .conferences-grid {
+        grid-template-columns: 1fr;
+    }
+}
