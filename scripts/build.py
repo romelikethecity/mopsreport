@@ -139,6 +139,27 @@ def build_homepage():
     </div>
 </section>
 
+<section class="popular-pages">
+    <div class="popular-pages-inner">
+        <h2>Popular Pages</h2>
+        <p class="popular-pages-subtitle">The most-read MOps salary data, tool comparisons, and career guides on the site.</p>
+        <div class="popular-pages-grid">
+            <a href="/salary/senior/" class="popular-page-link"><span class="page-tag">Salary</span><br>Senior MOps Manager Salary</a>
+            <a href="/salary/director/" class="popular-page-link"><span class="page-tag">Salary</span><br>Director of MOps Salary</a>
+            <a href="/salary/remote/" class="popular-page-link"><span class="page-tag">Salary</span><br>Remote vs Onsite MOps Pay</a>
+            <a href="/salary/vs-revops/" class="popular-page-link"><span class="page-tag">Salary</span><br>MOps vs RevOps Pay</a>
+            <a href="/salary/vs-demand-gen/" class="popular-page-link"><span class="page-tag">Salary</span><br>MOps vs Demand Gen Pay</a>
+            <a href="/salary/calculator/" class="popular-page-link"><span class="page-tag">Salary</span><br>MOps Salary Calculator</a>
+            <a href="/tools/compare/marketo-vs-hubspot/" class="popular-page-link"><span class="page-tag">Compare</span><br>Marketo vs HubSpot</a>
+            <a href="/tools/compare/salesforce-vs-hubspot/" class="popular-page-link"><span class="page-tag">Compare</span><br>Salesforce vs HubSpot</a>
+            <a href="/tools/compare/tableau-vs-looker/" class="popular-page-link"><span class="page-tag">Compare</span><br>Tableau vs Looker</a>
+            <a href="/tools/best-marketing-automation/" class="popular-page-link"><span class="page-tag">Tools</span><br>Best Marketing Automation Tools</a>
+            <a href="/tools/best-cdp/" class="popular-page-link"><span class="page-tag">Tools</span><br>Best CDP Platforms</a>
+            <a href="/careers/how-to-break-into-mops/" class="popular-page-link"><span class="page-tag">Career</span><br>How to Break Into MOps</a>
+        </div>
+    </div>
+</section>
+
 '''
     body += newsletter_cta_html()
 
