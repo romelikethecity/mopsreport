@@ -1269,6 +1269,8 @@ def build_tool_review_pages(tools_data, total_jobs):
 <ul>
     <li><a href="/tools/">All MOps Tools</a></li>
     <li><a href="/tools/category/{cat_slug}/">{cat_name} Tools</a></li>
+    <li><a href="/salary/">MOps Salary Data</a></li>
+    <li><a href="/glossary/">MOps Glossary</a></li>
 </ul>
 
 <p class="source-citation">Source: MOps Report analysis of {total_jobs} marketing operations job postings. Last updated April 2026.</p>

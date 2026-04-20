@@ -372,6 +372,8 @@ def build_seniority_pages(data):
     <li><a href="/salary/remote/">Remote vs. Onsite Pay</a></li>
     <li><a href="/salary/calculator/">Salary Calculator</a></li>
     <li><a href="/salary/methodology/">Methodology</a></li>
+    <li><a href="/careers/">MOps Career Guide</a></li>
+    <li><a href="/careers/how-to-break-into-mops/">How to Break Into MOps</a></li>
 </ul>
 
 {source_citation(data)}
@@ -468,6 +470,8 @@ def build_location_pages(data):
     <li><a href="/salary/">Full Salary Index</a></li>
     <li><a href="/salary/remote/">Remote vs. Onsite Pay</a></li>
     <li><a href="/salary/calculator/">Salary Calculator</a></li>
+    <li><a href="/careers/">MOps Career Guide</a></li>
+    <li><a href="/careers/how-to-break-into-mops/">How to Break Into MOps</a></li>
 </ul>
 
 {source_citation(data)}
@@ -567,6 +571,8 @@ def build_remote_page(data):
     <li><a href="/salary/calculator/">Salary Calculator</a></li>
     <li><a href="/salary/entry/">Entry-Level Salaries</a></li>
     <li><a href="/salary/vp/">VP-Level Salaries</a></li>
+    <li><a href="/careers/">MOps Career Guide</a></li>
+    <li><a href="/careers/how-to-break-into-mops/">How to Break Into MOps</a></li>
 </ul>
 
 {source_citation(data)}
@@ -768,6 +774,7 @@ function calculateSalary() {{
     <li><a href="/salary/">Full Salary Index</a></li>
     <li><a href="/salary/remote/">Remote vs. Onsite Analysis</a></li>
     <li><a href="/salary/methodology/">Our Methodology</a></li>
+    <li><a href="/careers/">MOps Career Guide</a></li>
 </ul>
 
 {source_citation(data)}
@@ -858,6 +865,7 @@ def build_methodology_page(data):
     <li><a href="/salary/">Salary Index</a></li>
     <li><a href="/salary/calculator/">Salary Calculator</a></li>
     <li><a href="/about/">About MOps Report</a></li>
+    <li><a href="/careers/">MOps Career Guide</a></li>
 </ul>
 
 {source_citation(data)}
@@ -1027,6 +1035,7 @@ def build_comparison_pages(data):
 <ul>
     <li><a href="/salary/">Full Salary Index</a></li>
     <li><a href="/salary/calculator/">Salary Calculator</a></li>
+    <li><a href="/careers/">MOps Career Guide</a></li>
 </ul>
 
 {source_citation(data)}
