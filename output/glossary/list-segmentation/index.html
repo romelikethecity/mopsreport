@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -137,13 +137,7 @@
 <p>The most impactful segmentation for email operations is engagement-based. Segmenting your database by recency and frequency of engagement allows you to send more aggressively to engaged contacts and less frequently to disengaged ones. This protects sender reputation while maximizing the value of your engaged audience.</p>
     </article>
     <section class="faq-section">
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/glossary.svg" alt="What Is List Segmentation? Definition for MOps - glossary visualization" width="1200" height="630" loading="eager">
-            <figcaption>What Is List Segmentation? Definition for MOps</figcaption>
-        </figure>
-
-        <h2>Frequently Asked Questions</h2>
+    <h2>Frequently Asked Questions</h2>
     <div class="faq-item">
     <h3 class="faq-question">What is the difference between a static list and a dynamic segment?</h3>
     <p class="faq-answer">A static list is a fixed group of records that only changes when you manually add or remove members. A dynamic segment automatically updates membership based on criteria (like job title or engagement level), so it stays current without manual effort.</p>
@@ -282,7 +276,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

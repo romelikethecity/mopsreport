@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -127,13 +127,7 @@
     <p>Marketing operations is one of the fastest-growing functions in B2B and B2C organizations. Companies that once had a single "marketing automation admin" now build full MOps teams with specialists in data, tooling, analytics, and campaign operations. The career path has expanded, and so have the questions.</p>
     <p>These guides answer the questions we see most from people entering the field, leveling up, or evaluating their next move.</p>
 
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/career.svg" alt="Marketing Operations Career Guides - career visualization" width="1200" height="630" loading="eager">
-            <figcaption>Marketing Operations Career Guides</figcaption>
-        </figure>
-
-        <h2>Getting Started</h2>
+    <h2>Getting Started</h2>
     <ul>
         <li><a href="/careers/how-to-break-into-mops/">How to Break Into Marketing Operations</a> - Skills, certifications, tools, and paths into the field</li>
         <li><a href="/careers/job-growth/">Marketing Ops Job Market Growth</a> - Demand trends, hiring patterns, and where the market is headed</li>
@@ -289,7 +283,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

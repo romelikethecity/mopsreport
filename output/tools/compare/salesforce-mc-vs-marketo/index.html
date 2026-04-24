@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -144,13 +144,7 @@
 </div>
 </div>
 
-
-        <figure class="content-figure">
-            <img src="/assets/images/content/tools.svg" alt="Salesforce Marketing Cloud vs. Marketo (2026) - tools visualization" width="1200" height="630" loading="eager">
-            <figcaption>Salesforce Marketing Cloud vs. Marketo (2026)</figcaption>
-        </figure>
-
-        <h2>Job Market Demand</h2>
+<h2>Job Market Demand</h2>
 <p>Salesforce Marketing Cloud appears in 14.2% of marketing operations job postings (42 of 295 tracked roles). Marketo appears in 11.9% (35 mentions). The gap reflects Salesforce Marketing Cloud's stronger enterprise penetration.</p>
 
 <h2>Feature Comparison</h2><table class='data-table'><thead><tr><th>Salesforce Marketing Cloud</th><th>Marketo</th></tr></thead><tbody><tr><td>Journey Builder for multi-channel campaign orchestration</td><td>Advanced lead scoring with behavioral and demographic dimensions</td></tr>
@@ -344,7 +338,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

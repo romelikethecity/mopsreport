@@ -285,7 +285,7 @@ def _gate_form_js(download_url, form_id):
         }})
         .then(function(r) {{ return r.json(); }})
         .then(function(data) {{
-            if (data.success) {{
+            if (data.ok || data.success) {{
                 if (typeof gtag === 'function') {{
                     gtag('event', 'lead_magnet_download', {{
                         'event_category': 'conversion',

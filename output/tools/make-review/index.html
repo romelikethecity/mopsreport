@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -145,13 +145,7 @@
 </div>
 </div>
 
-
-        <figure class="content-figure">
-            <img src="/assets/images/content/tools.svg" alt="Make (formerly Integromat) Review for Marketing Operations (2026) - tools visualization" width="1200" height="630" loading="eager">
-            <figcaption>Make (formerly Integromat) Review for Marketing Operations (2026)</figcaption>
-        </figure>
-
-        <h2>Overview</h2>
+<h2>Overview</h2>
 <p>Make is a visual integration platform that sits between Zapier (simplicity) and Workato (enterprise power). Its visual workflow builder and per-operation pricing make it popular with cost-conscious MOps teams.</p>
 <p>In our analysis of 295 marketing operations job postings, Make (formerly Integromat) appears in 2 listings (0.7% of all tracked roles). It represents a notable skill within the integration and automation category.</p>
 
@@ -340,7 +334,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

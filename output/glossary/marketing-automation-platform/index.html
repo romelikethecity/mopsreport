@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -137,13 +137,7 @@
 <p>The MAP market continues to evolve. Newer entrants like Braze, Iterable, and Customer.io focus on product-led and B2C use cases, while the established B2B players are adding AI features for send-time optimization, content generation, and predictive scoring.</p>
     </article>
     <section class="faq-section">
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/glossary.svg" alt="What Is Marketing Automation Platform (MAP)? Definition for MOps - glossary visualization" width="1200" height="630" loading="eager">
-            <figcaption>What Is Marketing Automation Platform (MAP)? Definition for MOps</figcaption>
-        </figure>
-
-        <h2>Frequently Asked Questions</h2>
+    <h2>Frequently Asked Questions</h2>
     <div class="faq-item">
     <h3 class="faq-question">What is the most popular marketing automation platform?</h3>
     <p class="faq-answer">HubSpot has the largest market share by number of customers, but Marketo (Adobe) dominates in enterprise B2B. The best choice depends on your team size, budget, CRM, and complexity of your campaigns.</p>
@@ -286,7 +280,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

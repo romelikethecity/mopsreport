@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -204,13 +204,7 @@
 
 
 
-
-        <figure class="content-figure">
-            <img src="/assets/images/content/tools.svg" alt="Best Customer Data Platforms for Marketing Ops (2026) - tools visualization" width="1200" height="630" loading="eager">
-            <figcaption>Best Customer Data Platforms for Marketing Ops (2026)</figcaption>
-        </figure>
-
-        <h2>How to Choose</h2>
+<h2>How to Choose</h2>
 <p>The CDP market has split into two camps: traditional CDPs (Segment, mParticle) that ingest, unify, and activate data, and reverse ETL tools (Hightouch, Census) that activate data already in your warehouse. If your company has a mature data warehouse, reverse ETL may be the better fit. If you need identity resolution and event tracking from scratch, a traditional CDP makes more sense.</p>
 
 <h2>Related Categories</h2>
@@ -353,7 +347,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

@@ -238,7 +238,7 @@ def get_page_wrapper(title, description, canonical_path, body_content,
             }})
             .then(function(r) {{ return r.json(); }})
             .then(function(data) {{
-                if (data.success) {{
+                if (data.ok || data.success) {{
                     if (typeof gtag === 'function') {{ gtag('event', 'newsletter_signup', {{'event_category': 'engagement', 'event_label': email}}); }}
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\\\'re in! Check your inbox.</p>';
                 }} else {{

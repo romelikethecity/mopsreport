@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -145,13 +145,7 @@
 </div>
 </div>
 
-
-        <figure class="content-figure">
-            <img src="/assets/images/content/tools.svg" alt="n8n Review for Marketing Operations (2026) - tools visualization" width="1200" height="630" loading="eager">
-            <figcaption>n8n Review for Marketing Operations (2026)</figcaption>
-        </figure>
-
-        <h2>Overview</h2>
+<h2>Overview</h2>
 <p>n8n is an open-source workflow automation tool. It can be self-hosted or used as a cloud service, making it attractive to MOps teams with privacy requirements or high-volume workflows where per-task pricing gets prohibitive.</p>
 <p>In our analysis of 295 marketing operations job postings, n8n appears in 4 listings (1.4% of all tracked roles). It represents a notable skill within the integration and automation category.</p>
 
@@ -339,7 +333,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

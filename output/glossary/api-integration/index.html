@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -137,13 +137,7 @@
 <p>Build integrations with monitoring from the start. API integrations fail for predictable reasons: expired tokens, rate limit exceeded, schema changes, and endpoint deprecation. Set up alerts so you know when an integration breaks before your data goes stale or your workflows stop functioning.</p>
     </article>
     <section class="faq-section">
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/glossary.svg" alt="What Is API Integration? Definition for MOps - glossary visualization" width="1200" height="630" loading="eager">
-            <figcaption>What Is API Integration? Definition for MOps</figcaption>
-        </figure>
-
-        <h2>Frequently Asked Questions</h2>
+    <h2>Frequently Asked Questions</h2>
     <div class="faq-item">
     <h3 class="faq-question">Do I need to know how to code to work with APIs?</h3>
     <p class="faq-answer">Not necessarily. iPaaS tools like Workato and Zapier abstract away the coding. However, understanding API concepts (endpoints, authentication, rate limits, HTTP methods) makes you more effective at configuring integrations and troubleshooting when things break.</p>
@@ -282,7 +276,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

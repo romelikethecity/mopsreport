@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -137,13 +137,7 @@
 <p>The hardest part of attribution is not the technology. It is getting organizational buy-in on which model to use and accepting that no model is perfectly accurate. Attribution is a useful approximation, not an exact science. Pick a model, use it consistently, and optimize based on the trends it reveals rather than obsessing over the precision of individual touchpoint credits.</p>
     </article>
     <section class="faq-section">
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/glossary.svg" alt="What Is Marketing Attribution? Definition for MOps - glossary visualization" width="1200" height="630" loading="eager">
-            <figcaption>What Is Marketing Attribution? Definition for MOps</figcaption>
-        </figure>
-
-        <h2>Frequently Asked Questions</h2>
+    <h2>Frequently Asked Questions</h2>
     <div class="faq-item">
     <h3 class="faq-question">What is the difference between first-touch and last-touch attribution?</h3>
     <p class="faq-answer">First-touch gives all credit to the initial interaction that brought someone into your funnel. Last-touch gives all credit to the final interaction before conversion. Both are single-touch models that oversimplify the buyer journey but are easy to implement and understand.</p>
@@ -286,7 +280,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

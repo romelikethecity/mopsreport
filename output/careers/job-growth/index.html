@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -129,13 +129,7 @@
     <p>Marketing operations has gone from a niche function to a core team at most growth-stage and enterprise companies. The data tells a clear story: more companies are hiring MOps professionals, the roles are getting more specialized, and compensation continues to rise.</p>
     <p>This page covers the trends shaping the MOps job market in 2026.</p>
 
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/career.svg" alt="Marketing Operations Job Market Growth in 2026 - career visualization" width="1200" height="630" loading="eager">
-            <figcaption>Marketing Operations Job Market Growth in 2026</figcaption>
-        </figure>
-
-        <h2>Market Growth by the Numbers</h2>
+    <h2>Market Growth by the Numbers</h2>
     <p>Based on our analysis of 15,000+ marketing operations job postings, here is what the data shows:</p>
     <ul>
         <li><strong>Year-over-year posting growth:</strong> approximately 42%, measured by volume of new MOps-specific job listings</li>
@@ -362,7 +356,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {

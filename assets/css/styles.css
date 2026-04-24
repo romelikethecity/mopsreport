@@ -220,7 +220,7 @@
     border-radius: var(--mops-radius-md);
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
-    color: var(--mops-text-inverse);
+    color: #F1F5F9;
     font-family: var(--mops-font-body);
     font-size: var(--mops-text-sm);
 }
@@ -315,10 +315,15 @@
     flex: 1;
     padding: var(--mops-space-3) var(--mops-space-4);
     border-radius: var(--mops-radius-md);
-    border: 1px solid var(--mops-border);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     font-family: var(--mops-font-body);
     font-size: var(--mops-text-base);
-    background: var(--mops-bg-surface);
+    background: rgba(255, 255, 255, 0.1);
+    color: #F1F5F9;
+}
+
+.hero-signup input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .hero-signup input:focus {

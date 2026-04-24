@@ -7,7 +7,7 @@ SITE_URL = "https://mopsreport.com"
 SITE_TAGLINE = "Career intelligence for marketing operations professionals"
 COPYRIGHT_YEAR = "2026"
 CURRENT_YEAR = 2026
-CSS_VERSION = "1"
+CSS_VERSION = "2"
 
 CTA_HREF = "/newsletter/"
 CTA_LABEL = "Get the Weekly Brief"

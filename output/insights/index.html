@@ -39,8 +39,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css?v=1">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" href="/assets/css/components.css?v=2">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8MN0GWHSM"></script>
@@ -126,13 +126,7 @@
 <div class="container">
     <p>MOps Report publishes data-driven analysis on the marketing operations profession. Every insight is built on real job posting data, tool usage patterns, and market research. No vendor spin, no pay-to-play rankings.</p>
 
-    
-        <figure class="content-figure">
-            <img src="/assets/images/content/insights.svg" alt="MOps Insights: Data and Analysis - insights visualization" width="1200" height="630" loading="eager">
-            <figcaption>MOps Insights: Data and Analysis</figcaption>
-        </figure>
-
-        <h2>Salary Intelligence</h2>
+    <h2>Salary Intelligence</h2>
     <p>Compensation data based on analysis of thousands of marketing operations job postings. Updated regularly.</p>
     <ul>
         <li><a href="/salary/">Salary Index</a> - Complete MOps salary benchmarks by seniority</li>
@@ -292,7 +286,7 @@
             })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                if (data.success) {
+                if (data.ok || data.success) {
                     if (typeof gtag === 'function') { gtag('event', 'newsletter_signup', {'event_category': 'engagement', 'event_label': email}); }
                     form.innerHTML = '<p style="color: var(--mops-accent); font-weight: 600;">You\'re in! Check your inbox.</p>';
                 } else {
