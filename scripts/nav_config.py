@@ -58,6 +58,7 @@ NAV_ITEMS = [
     {"href": "/glossary/", "label": "Glossary"},
     {"href": "/insights/", "label": "Insights"},
     {"href": "/voices/", "label": "Top Voices"},
+    {"href": "/about/", "label": "About"},
 ]
 
 FOOTER_COLUMNS = {
