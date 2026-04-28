@@ -206,9 +206,15 @@ def build_about_page():
         <li><strong><a href="/careers/">Career guides</a></strong> for breaking into and advancing in marketing operations</li>
         <li><strong><a href="/insights/">Insights</a></strong> and data-driven analysis of the MOps job market</li>
     </ul>
-    <p>Built by <strong>Rome Thorndike</strong>.</p>
+    <h2>Who Built This</h2>
+    <p><strong>Rome Thorndike</strong> is the founder of The MOps Report and VP of Revenue at Firmograph.ai, where marketing operations rolls up directly under his revenue leadership. Over his 15+ year career in B2B sales and revenue leadership at Salesforce, Microsoft, Snapdocs, and Datajoy (acquired by Databricks), Rome has managed marketing operations teams, overseen marketing automation platforms, and worked at the intersection of marketing and revenue. He holds an MBA from UC Berkeley's Haas School of Business. He built The MOps Report because marketing ops professionals deserve their own career intelligence, not a sidebar in broader marketing coverage.</p>
+    <p><a href="https://www.linkedin.com/in/romethorndike/" target="_blank" rel="noopener">Connect with Rome on LinkedIn</a></p>
 </div>
 '''
+
+    person_schema = '''<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Rome Thorndike","url":"https://www.linkedin.com/in/romethorndike/","jobTitle":"VP of Revenue","worksFor":{"@type":"Organization","name":"Firmograph.ai"},"alumniOf":{"@type":"EducationalOrganization","name":"UC Berkeley Haas School of Business"}}
+</script>'''
 
     page = get_page_wrapper(
         title=title,
@@ -216,7 +222,7 @@ def build_about_page():
         canonical_path="/about/",
         body_content=body,
         active_path="/about/",
-        extra_head=get_breadcrumb_schema(crumbs),
+        extra_head=get_breadcrumb_schema(crumbs) + person_schema,
         body_class="page-inner",
     )
     write_page("about/index.html", page)
