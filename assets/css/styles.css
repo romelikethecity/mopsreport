@@ -153,7 +153,7 @@
 /* ---- Site Footer ---- */
 .site-footer {
     background: var(--mops-bg-dark);
-    color: var(--mops-text-inverse);
+    color: #F1F5F9;
     padding: var(--mops-space-16) 0 var(--mops-space-8);
 }
 
@@ -172,7 +172,7 @@
 .footer-column h4 {
     font-family: var(--mops-font-heading);
     font-size: var(--mops-text-sm);
-    color: var(--mops-text-tertiary);
+    color: #94A3B8;
     margin-bottom: var(--mops-space-4);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -189,7 +189,7 @@
 }
 
 .footer-column a {
-    color: var(--mops-text-inverse);
+    color: #F1F5F9;
     opacity: 0.8;
     text-decoration: none;
     font-size: var(--mops-text-sm);
@@ -198,7 +198,7 @@
 
 .footer-column a:hover {
     opacity: 1;
-    color: var(--mops-text-inverse);
+    color: #FFFFFF;
 }
 
 /* Footer newsletter */
