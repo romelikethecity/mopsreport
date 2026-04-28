@@ -97,6 +97,78 @@ def build_homepage():
     </div>
 </section>
 
+<section class="mops-preview-section">
+    <h2 class="mops-preview-heading">See What You Get Every Monday</h2>
+    <p class="mops-preview-subheading">The Weekly Brief distills 15,000+ job postings into the salary shifts, tool trends, and hiring signals that matter.</p>
+    <div class="mops-preview-window">
+        <div class="mops-preview-toolbar">
+            <div class="mops-preview-dots">
+                <span class="mops-preview-dot mops-preview-dot--red"></span>
+                <span class="mops-preview-dot mops-preview-dot--yellow"></span>
+                <span class="mops-preview-dot mops-preview-dot--green"></span>
+            </div>
+            <span class="mops-preview-toolbar-label">Inbox | The Weekly Brief</span>
+        </div>
+        <div class="mops-preview-body">
+            <div class="mops-preview-header-row">
+                <span class="mops-preview-from">MOps Report &lt;brief@mopsreport.com&gt;</span>
+                <span class="mops-preview-date">Mon, Apr 28</span>
+            </div>
+            <h3 class="mops-preview-subject">Marketo demand drops 8% while HubSpot climbs. What it means for your career.</h3>
+            <div class="mops-preview-stats-row">
+                <div class="mops-preview-stat-card">
+                    <span class="mops-preview-stat-value">15,000+</span>
+                    <span class="mops-preview-stat-label">Roles Tracked</span>
+                    <span class="mops-preview-stat-trend mops-preview-stat-trend--up">+12% QoQ</span>
+                </div>
+                <div class="mops-preview-stat-card">
+                    <span class="mops-preview-stat-value">$95K</span>
+                    <span class="mops-preview-stat-label">Median Salary</span>
+                    <span class="mops-preview-stat-trend mops-preview-stat-trend--up">+4% YoY</span>
+                </div>
+            </div>
+            <div class="mops-preview-signal-strip">
+                <span class="mops-preview-signal">42% YoY Growth</span>
+                <span class="mops-preview-signal">35% Remote</span>
+                <span class="mops-preview-signal">50+ Tools</span>
+            </div>
+            <p class="mops-preview-body-label">This Week's Tool Demand</p>
+            <table class="mops-preview-table">
+                <thead>
+                    <tr><th>Tool</th><th>Job Mentions</th><th>Share</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>HubSpot</td><td>6,300</td><td><span class="mops-preview-bar" style="width:100%"></span> 42%</td></tr>
+                    <tr><td>Marketo</td><td>4,650</td><td><span class="mops-preview-bar" style="width:74%"></span> 31%</td></tr>
+                    <tr><td>Salesforce MC</td><td>3,300</td><td><span class="mops-preview-bar" style="width:52%"></span> 22%</td></tr>
+                    <tr><td>Pardot</td><td>2,250</td><td><span class="mops-preview-bar" style="width:36%"></span> 15%</td></tr>
+                    <tr><td>Eloqua</td><td>1,200</td><td><span class="mops-preview-bar" style="width:19%"></span> 8%</td></tr>
+                </tbody>
+            </table>
+            <p class="mops-preview-body-label">Salary by Seniority</p>
+            <table class="mops-preview-table mops-preview-table--salary">
+                <thead>
+                    <tr><th>Level</th><th>Median Base</th><th>Trend</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Entry</td><td>$65,000</td><td class="mops-preview-trend-up">+3%</td></tr>
+                    <tr><td>Mid-Level</td><td>$85,000</td><td class="mops-preview-trend-up">+5%</td></tr>
+                    <tr><td>Senior</td><td>$110,000</td><td class="mops-preview-trend-up">+6%</td></tr>
+                    <tr class="mops-preview-fade-row"><td>Director</td><td>$140,000</td><td class="mops-preview-trend-up">+4%</td></tr>
+                </tbody>
+            </table>
+            <div class="mops-preview-fade"></div>
+        </div>
+    </div>
+    <div class="mops-preview-cta-wrap">
+        <form class="hero-signup" onsubmit="return false;">
+            <input type="email" placeholder="Your email" aria-label="Email address" required>
+            <button type="submit" class="btn btn--primary">Get the Weekly Brief</button>
+        </form>
+        <p class="mops-preview-cta-note">Free. Every Monday. No spam.</p>
+    </div>
+</section>
+
 <section class="section-previews">
     <h2 class="section-previews-heading">Explore MOps Intelligence</h2>
     <div class="preview-grid">
